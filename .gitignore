@@ -11,6 +11,9 @@ jsconfig.json
 ops.json
 whitelist.json
 /kubejs/README.txt
+servers.dat
+servers.dat_old
+servers.essential.dat
 
 # FOLDERS
 .probe
