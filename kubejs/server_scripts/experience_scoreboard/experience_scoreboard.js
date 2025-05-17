@@ -1,5 +1,6 @@
 PlayerEvents.tick(event => {
-    const scoreboard = event.server.getScoreboard();
-    // event.player.tell(event.player.getScoreboard().get)
-    // event.player.tell(event.player.getScoreboard().getObjectiveNames(event.player.getScoreboard().getObjective("experience")).toArray());
+    const scoreboard = event.server.scoreboard.getObjective("experience")
+    const player_name = event.player.getDisplayName().getString()
+    const scores = event.server.getScoreboard().getOrCreatePlayerScore(player_name, scoreboard)
+    event.player.tell(scores.getScore().toString())
 })

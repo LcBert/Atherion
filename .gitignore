@@ -30,6 +30,7 @@ servers.essential.dat
 /backups/
 /local/
 /kubejs/probe
+/moddata/
 
 # MOD CONFIG
 /config/*
