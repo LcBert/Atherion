@@ -1,0 +1,32 @@
+# FILES
+.curseclient
+command_history.txt
+minecraftinstance.json
+options.txt
+usercache.json
+usernamecache.json
+irisUpdateInfo.json
+rhino.local.properties
+jsconfig.json
+/kubejs/README.txt
+
+# FOLDERS
+.probe
+.vscode/
+.fabric/
+.mixin.out/
+/saves/
+/data/
+/ESM/
+/crash-reports/
+/essential/
+/logs/
+/downloads/
+/backups/
+/local/
+/kubejs/probe
+
+# MOD CONFIG
+/config/*
+!/config/clienttweaks-common.toml
+!/config/itemphysic.json
