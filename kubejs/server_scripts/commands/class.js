@@ -1,10 +1,10 @@
 const kit = [
     {
         class: "warrior", starter_kit: {
-            head: { id: "minecraft:leather_helmet", count: 1, components: [{ component: "minecraft:dyed_color", color: "11546150" }] },
-            chest: { id: "minecraft:leather_chestplate", count: 1, components: [{ component: "minecraft:dyed_color", color: "11546150" }] },
-            legs: { id: "minecraft:leather_leggings", count: 1, components: [{ component: "minecraft:dyed_color", color: "11546150" }] },
-            feet: { id: "minecraft:leather_boots", count: 1, components: [{ component: "minecraft:dyed_color", color: "11546150" }] },
+            head: { id: "magistuarmory:coif", count: 1, },
+            chest: { id: "magistuarmory:gambeson_chestplate", count: 1, },
+            legs: { id: "magistuarmory:pantyhose", count: 1, },
+            feet: { id: "magistuarmory:gambeson_boots", count: 1, },
             offhand: { id: "minecraft:lantern", count: 1 },
             0: { id: "magistuarmory:wood_shortsword", count: 1 },
             1: { id: "minecraft:bread", count: 10 },
@@ -12,10 +12,10 @@ const kit = [
     },
     {
         class: "archer", starter_kit: {
-            head: { id: "minecraft:leather_helmet", count: 1, components: [{ component: "minecraft:dyed_color", color: "6192150" }] },
-            chest: { id: "minecraft:leather_chestplate", count: 1, components: [{ component: "minecraft:dyed_color", color: "6192150" }] },
-            legs: { id: "minecraft:leather_leggings", count: 1, components: [{ component: "minecraft:dyed_color", color: "6192150" }] },
-            feet: { id: "minecraft:leather_boots", count: 1, components: [{ component: "minecraft:dyed_color", color: "6192150" }] },
+            head: { id: "minecraft:leather_helmet", count: 1, },
+            chest: { id: "minecraft:leather_chestplate", count: 1, },
+            legs: { id: "minecraft:leather_leggings", count: 1, },
+            feet: { id: "minecraft:leather_boots", count: 1, },
             offhand: { id: "minecraft:lantern", count: 1 },
             0: { id: "minecraft:bow", count: 1 },
             1: { id: "minecraft:bread", count: 10 },
@@ -75,6 +75,7 @@ ServerEvents.commandRegistry(event => {
 })
 
 function giveStarterKit(target, kit_id) {
+    // For Armor: 39 = helmet, 38 = chestplate, 37 = leggings, 36 = boots, 40 = offhand
     var indexs = [39, 38, 37, 36, 40]
     var items = [
         kit_id.starter_kit.head,
@@ -87,13 +88,10 @@ function giveStarterKit(target, kit_id) {
 
     for (let i = 0; i < items.length; i++) {
         try {
-            var item_to_give = Item.of(items[i].id)
-            if (items[i].components)
-                item_to_give = item_to_give.componentContainer.set(items[i].components[0].component, { rgb: items[i].components[0].color })
             if (target.inventory.getStackInSlot(indexs[i]).isEmpty()) {
-                target.inventory.insertItem(indexs[i], item_to_give, false)
+                target.inventory.insertItem(indexs[i], items[i].id, false)
             } else {
-                target.inventory.insertItem(item_to_give, false)
+                target.inventory.insertItem(items[i].id, false)
             }
         } catch (e) {
             console.log(e)
@@ -102,7 +100,10 @@ function giveStarterKit(target, kit_id) {
 
     for (let i = 0; i <= 35; i++) {
         try {
-            target.inventory.insertItem(Item.of(kit_id.starter_kit[i].id, kit_id.starter_kit[i].count), false)
+            if (target.inventory.getStackInSlot(i).isEmpty())
+                target.inventory.insertItem(i, Item.of(kit_id.starter_kit[i].id, kit_id.starter_kit[i].count), false)
+            else
+                target.inventory.insertItem(Item.of(kit_id.starter_kit[i].id, kit_id.starter_kit[i].count), false)
         } catch (e) {
             console.log(e)
         }
