@@ -19,16 +19,15 @@ ClientEvents.paintScreen(event => {
     };
 
     if (currentScreen) {
-        let screenClass = currentScreen.getClass()
-
-        if (screenClass) {
+        let screenClass = currentScreen.getClass().toString()
+        if (screenClass.toString() != "class net.minecraft.class_408" && screenClass.toString() != "class net.minecraft.class_5289") {
             overlay.xp_overlay.color = "#253B12"
         }
     }
 
     try {
         event.player.paint({ xp_overlay: { remove: true } })
-    } catch (e) {}
+    } catch (e) { }
 
     if (
         event.player.getXpLevel() === 0 &&
