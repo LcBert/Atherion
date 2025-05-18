@@ -24,8 +24,6 @@ const kit = [
     }
 ]
 
-const starter_kit = false
-
 ServerEvents.commandRegistry(event => {
     const { commands: Commands, arguments: Arguments } = event;
     event.register(

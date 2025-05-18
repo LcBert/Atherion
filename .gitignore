@@ -1,7 +1,6 @@
 # FILES
 .curseclient
 command_history.txt
-minecraftinstance.json
 options.txt
 usercache.json
 usernamecache.json
