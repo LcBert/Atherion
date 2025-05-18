@@ -41,6 +41,7 @@ ServerEvents.commandRegistry(event => {
                         if (give_starter_kit)
                             giveStarterKit(target, kit[0])
 
+                        activator.tell("Set class to " + class_id + " for " + target.getName().getString())
                         return 1;
                     })))
                     .then(Commands.literal("archer").then(Commands.argument("starter_kit", Arguments.BOOLEAN.create(event)).executes(command_event => {
@@ -61,6 +62,8 @@ ServerEvents.commandRegistry(event => {
                 const activator = command_event.getSource().getPlayerOrException()
                 const target = Arguments.PLAYER.getResult(command_event, "player")
                 removeClass(activator, target)
+
+                activator.tell("Removed class from " + target.getName().getString())
                 return 1;
             })))
             .then(Commands.literal("get").then(Commands.argument("player", Arguments.PLAYER.create(event)).executes(command_event => {
@@ -110,12 +113,10 @@ function giveStarterKit(target, kit_id) {
 
 function setClass(activator, target, class_id) {
     target.addTag("class:" + class_id)
-    activator.tell("Set class to " + class_id + " for " + target.getName().getString())
 }
 
 function removeClass(activator, target) {
     target.tags.removeIf(tag => tag.startsWith("class:"))
-    activator.tell("Removed class from " + target.getName().getString())
 }
 
 function getClass(activator, target) {
