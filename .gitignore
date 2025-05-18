@@ -31,6 +31,7 @@ servers.essential.dat
 /local/
 /kubejs/probe
 /moddata/
+/defaultconfigs/
 
 # MOD CONFIG
 /config/*
