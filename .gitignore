@@ -38,3 +38,7 @@ servers.essential.dat
 /config/*
 !/config/clienttweaks-common.toml
 !/config/itemphysic.json
+!/config/easy_npc/
+/config/easy_npc/pose/
+/config/easy_npc/skin
+!/config/easy_npc/preset/*
