@@ -32,6 +32,7 @@ servers.essential.dat
 /moddata/
 /defaultconfigs/
 /easy_npc/
+/screenshots/
 
 # MOD CONFIG
 /config/*
