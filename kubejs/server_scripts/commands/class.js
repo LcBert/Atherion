@@ -41,7 +41,7 @@ ServerEvents.commandRegistry(event => {
                         if (give_starter_kit)
                             giveStarterKit(target, kit[0])
 
-                        activator.tell("Set class to " + class_id + " for " + target.getName().getString())
+                        activator.tell("Set class to warrior for " + target.getName().getString())
                         return 1;
                     })))
                     .then(Commands.literal("archer").then(Commands.argument("starter_kit", Arguments.BOOLEAN.create(event)).executes(command_event => {
@@ -55,6 +55,7 @@ ServerEvents.commandRegistry(event => {
                         if (give_starter_kit)
                             giveStarterKit(target, kit[1])
 
+                        activator.tell("Set class to archer for " + target.getName().getString())
                         return 1;
                     })))
                 ))
