@@ -4,8 +4,10 @@
     "enabled": true,
     "origins": [
         "origins:dwarf",
+        "origins:elf",
         "origins:normal",
-        "origins:giant"
+        "origins:dragonoid",
+        "origins:orc"
     ],
     "allow_random": false,
     "exclude_random": [],

@@ -2,6 +2,7 @@
     "type": "origins:action_on_callback",
     "entity_action_gained": {
         "type": "origins:execute_command",
-        "command": "scale set 0.7 @s"
-    }
+        "command": "scale set 0.8 @s"
+    },
+    "hidden": true
 }

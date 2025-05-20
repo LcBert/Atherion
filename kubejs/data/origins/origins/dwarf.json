@@ -1,4 +1,6 @@
 {
+    "name": "Nano",
+    "description": "Stazza nanica\nPerfetto per chi preferisce una stazza piccola, ma stabile e resistente",
     "powers": [
         "origins:dwarf_scale"
     ],

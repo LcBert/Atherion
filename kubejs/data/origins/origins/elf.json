@@ -1,0 +1,12 @@
+{
+    "name": "Elfo",
+    "description": "Stazza elfica\nIdeale per chi cerca agilità e discrezione, con un corpo slanciato ma non ingombrante",
+    "powers": [
+        "origins:elf_scale"
+    ],
+    "icon": {
+        "item": "minecraft:stick"
+    },
+    "order": 1,
+    "impact": 1
+}
