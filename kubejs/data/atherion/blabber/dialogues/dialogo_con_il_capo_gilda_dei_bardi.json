@@ -1,0 +1,35 @@
+{
+  "states": {
+    "primodialogocapobardi": {
+      "text": "Ah, un volto nuovo! C’è musica nei tuoi occhi e poesia nel tuo passo… Dimmi, viandante: vuoi trasformare il mondo in una canzone? Unisciti alla Gilda dei Bardi, e farai vibrare corde e cuori!",
+      "type": "default",
+      "choices": [
+        {
+          "next": "accettato",
+          "text": "Sì! Voglio incantare il regno con ballate, leggende e melodie immortali!"
+        },
+        {
+          "next": "rifiuto",
+          "text": "La mia voce tace oggi… ma forse un giorno canterà con voi."
+        }
+      ]
+    },
+    "accettato": {
+      "text": "",
+      "type": "end_dialogue",
+      "action": {
+        "type": "blabber:command",
+        "value": "/title @p title {\"text\":\"Bardo... il mondo è il tuo palco\",\"color\":\"light_purple\"}"
+      }
+    },
+    "rifiuto": {
+      "text": "",
+      "type": "end_dialogue"
+    }
+  },
+  "layout": {
+    "type": "blabber:rpg"
+  },
+  "unskippable": false,
+  "start_at": "primodialogocapobardi"
+}

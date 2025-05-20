@@ -1,0 +1,35 @@
+{
+  "states": {
+    "primodialogocapomaghi": {
+      "text": "Ah... un'anima irrequieta si presenta dinanzi alle soglie del Sapere. Dimmi, viandante: sei giunto per caso… o è stata la magia stessa a condurti qui? Se cerchi di elevar mente e spirito, la Gilda dei Maghi è il sentiero che attende i degni.",
+      "type": "default",
+      "choices": [
+        {
+          "next": "accettato",
+          "text": "Sì. Bramo conoscere l'invisibile, dominare l'ignoto, e scrivere il mio nome tra le stelle."
+        },
+        {
+          "next": "rifiuto",
+          "text": "Non ancora. Le stelle non hanno parlato… per ora."
+        }
+      ]
+    },
+    "accettato": {
+      "text": "",
+      "type": "end_dialogue",
+      "action": {
+        "type": "blabber:command",
+        "value": "/title @p title {\"text\":\"Mago... l'eternità ti osserva\",\"color\":\"dark_purple\"}"
+      }
+    },
+    "rifiuto": {
+      "text": "",
+      "type": "end_dialogue"
+    }
+  },
+  "layout": {
+    "type": "blabber:rpg"
+  },
+  "unskippable": false,
+  "start_at": "primodialogocapomaghi"
+}

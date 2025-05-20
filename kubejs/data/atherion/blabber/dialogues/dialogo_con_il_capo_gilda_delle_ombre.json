@@ -1,0 +1,35 @@
+{
+  "states": {
+    "primodialogocapodelleombre": {
+      "text": "Non tutti vedono ciò che si cela nell’ombra… ma tu sì. I tuoi passi sono leggeri, i tuoi occhi attenti. Dimmi, straniero... vuoi lasciare la luce alle spalle e unirti alla Gilda delle Ombre?",
+      "type": "default",
+      "choices": [
+        {
+          "next": "accettato",
+          "text": "Sì… voglio muovermi tra le ombre, colpire senza essere visto, e sussurrare segreti che nessuno osa dire ad alta voce."
+        },
+        {
+          "next": "rifiuto",
+          "text": "Le tenebre mi affascinano… ma oggi resto alla luce. Forse un giorno, quando cadrà la luna."
+        }
+      ]
+    },
+    "accettato": {
+      "text": "",
+      "type": "end_dialogue",
+      "action": {
+        "type": "blabber:command",
+        "value": "/title @p title {\"text\":\"Hai scelto le Ombre\",\"color\":\"dark_purple\"}"
+      }
+    },
+    "rifiuto": {
+      "text": "",
+      "type": "end_dialogue"
+    }
+  },
+  "layout": {
+    "type": "blabber:rpg"
+  },
+  "unskippable": false,
+  "start_at": "primodialogocapodelleombre"
+}
