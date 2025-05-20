@@ -1,0 +1,10 @@
+{
+    "powers": [
+        "origins:dwarf_scale"
+    ],
+    "icon": {
+        "item": "minecraft:stick"
+    },
+    "order": 1,
+    "impact": 1
+}
