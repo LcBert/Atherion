@@ -1,0 +1,10 @@
+{
+    "powers": [
+        "origins:kit/chef"
+    ],
+    "icon": {
+        "item": "minecraft:barrier"
+    },
+    "order": 1,
+    "impact": 1
+}

@@ -2,7 +2,17 @@
     "replace": false,
     "enabled": true,
     "origins": [
-        "origins:class/warrior"
+        "origins:class/warrior",
+        "origins:class/archer",
+        "origins:class/mage",
+        "origins:class/shadow",
+        "origins:class/bard",
+        "origins:class/blacksmith",
+        "origins:class/alchimist",
+        "origins:class/chef",
+        "origins:class/farmer",
+        "origins:class/miner",
+        "origins:class/carpenter"
     ],
     "allow_random": false,
     "exclude_random": [],

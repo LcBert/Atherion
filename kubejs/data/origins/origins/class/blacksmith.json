@@ -1,0 +1,10 @@
+{
+    "powers": [
+        "origins:kit/blacksmith"
+    ],
+    "icon": {
+        "item": "minecraft:anvil"
+    },
+    "order": 1,
+    "impact": 1
+}

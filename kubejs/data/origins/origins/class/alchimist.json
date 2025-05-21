@@ -1,0 +1,10 @@
+{
+    "powers": [
+        "origins:kit/alchimist"
+    ],
+    "icon": {
+        "item": "minecraft:potion"
+    },
+    "order": 1,
+    "impact": 1
+}

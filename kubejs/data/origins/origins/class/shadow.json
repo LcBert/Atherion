@@ -1,10 +1,9 @@
 {
     "powers": [
-        "origins:class/warrior",
         "origins:kit/warrior"
     ],
     "icon": {
-        "item": "minecraft:netherite_sword"
+        "item": "minecraft:stone_stiletto"
     },
     "order": 1,
     "impact": 1

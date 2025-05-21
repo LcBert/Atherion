@@ -1,0 +1,10 @@
+{
+    "powers": [
+        "origins:kit/farmer"
+    ],
+    "icon": {
+        "item": "minecraft:stone_hoe"
+    },
+    "order": 1,
+    "impact": 1
+}

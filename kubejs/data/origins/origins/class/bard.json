@@ -1,0 +1,10 @@
+{
+    "powers": [
+        "origins:kit/bard"
+    ],
+    "icon": {
+        "item": "immersive_melodies:piano"
+    },
+    "order": 1,
+    "impact": 1
+}

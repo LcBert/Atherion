@@ -1,0 +1,10 @@
+{
+    "powers": [
+        "origins:kit/mage"
+    ],
+    "icon": {
+        "item": "elemental_wizards_rpg:staff_elemental"
+    },
+    "order": 1,
+    "impact": 1
+}

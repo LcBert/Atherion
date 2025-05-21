@@ -2,14 +2,11 @@
     "type": "origins:starting_equipment",
     "stacks": [
         {
-            "item": "minecraft:magistuarmory_shortsword"
+            "item": "minecraft:lantern",
+            "slot": 40
         },
         {
             "item": "minecraft:stone_pickaxe"
-        },
-        {
-            "item": "numismatic-overhaul:bronze_coin",
-            "amount": 50
         }
     ],
     "hidden": true
