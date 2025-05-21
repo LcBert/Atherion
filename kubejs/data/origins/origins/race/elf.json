@@ -2,7 +2,7 @@
     "name": "Elfo",
     "description": "Stazza elfica\nIdeale per chi cerca agilità e discrezione, con un corpo slanciato ma non ingombrante",
     "powers": [
-        "origins:elf_scale"
+        "origins:race/elf_scale"
     ],
     "icon": {
         "item": "minecraft:stick"

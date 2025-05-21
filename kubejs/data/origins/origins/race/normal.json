@@ -2,7 +2,7 @@
     "name": "Umano",
     "description": "Stazza media\nPer chi vuole una esperienza equilibrata.",
     "powers": [
-        "origins:normal_scale"
+        "origins:race/normal_scale"
     ],
     "icon": {
         "item": "minecraft:stick"

@@ -2,7 +2,7 @@
     "name": "Dragonoide",
     "description": "Stazza robusta\nOttimo per chi vuole una presenza massiccia, visibile e potente",
     "powers": [
-        "origins:dragonoid_scale"
+        "origins:race/dragonoid_scale"
     ],
     "icon": {
         "item": "minecraft:stick"
