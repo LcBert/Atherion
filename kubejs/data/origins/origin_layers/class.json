@@ -1,12 +1,10 @@
 {
     "replace": false,
-    "order": 1,
     "enabled": true,
     "origins": [
         "origins:class/warrior"
     ],
     "allow_random": false,
     "exclude_random": [],
-    "allow_random_unchoosable": false,
-    "hidden": true
+    "allow_random_unchoosable": false
 }

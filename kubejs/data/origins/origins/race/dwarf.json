@@ -2,7 +2,8 @@
     "name": "Nano",
     "description": "Stazza nanica\nPerfetto per chi preferisce una stazza piccola, ma stabile e resistente",
     "powers": [
-        "origins:race/dwarf_scale"
+        "origins:race/dwarf_scale",
+        "origins:kit/common"
     ],
     "icon": {
         "item": "minecraft:stick"

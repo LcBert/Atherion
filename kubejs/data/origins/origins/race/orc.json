@@ -2,7 +2,8 @@
     "name": "Orco",
     "description": "Stazza imponente\nPerfetto per chi vuole dominare lo spazio con una corporatura grande e minaciosa",
     "powers": [
-        "origins:race/orc_scale"
+        "origins:race/orc_scale",
+        "origins:kit/common"
     ],
     "icon": {
         "item": "minecraft:stick"

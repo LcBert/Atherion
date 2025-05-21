@@ -1,0 +1,13 @@
+{
+    "type": "origins:starting_equipment",
+    "stacks": [
+        {
+            "item": "magistuarmory:stone_zweihander"
+        },
+        {
+            "item": "magistuarmory:stone_kiteshield",
+            "slot": 40
+        }
+    ],
+    "hidden": true
+}

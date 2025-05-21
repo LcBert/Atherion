@@ -19,7 +19,7 @@
       "type": "end_dialogue",
       "action": {
         "type": "blabber:command",
-        "value": "/title @p title {\"text\":\"Sei diventato un guerriero\",\"color\":\"gold\"}"
+        "value": "/function atherion:class_warrior"
       }
     },
     "rifiuto": {

@@ -2,7 +2,8 @@
     "name": "Guerriero",
     "description": "Guerriero\nUn guerriero è un combattente esperto, abile nell'uso delle armi e nella strategia di battaglia. Con una grande forza fisica e resistenza, è in grado di affrontare qualsiasi avversario con coraggio e determinazione.",
     "powers": [
-        "origins:class/warrior"
+        "origins:class/warrior",
+        "origins:kit/warrior"
     ],
     "icon": {
         "item": "minecraft:netherite_sword"
