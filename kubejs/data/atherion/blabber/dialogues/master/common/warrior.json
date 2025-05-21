@@ -1,0 +1,35 @@
+{
+  "states": {
+    "primodialogocapoguerriero": {
+      "text": "Salve, viandante. Vuoi diventare un vero guerriero? Lo leggo nei tuoi occhi… Forza, unisciti alla Gilda dei Guerrieri! Ti insegnerò tutte le arti del combattimento.",
+      "type": "default",
+      "choices": [
+        {
+          "next": "accettato",
+          "text": "Sì, desidero diventare un guerriero fortissimo, temuto e rispettato in ogni angolo del regno!"
+        },
+        {
+          "next": "rifiuto",
+          "text": "Non ora, forse più tardi… Il destino è incerto, come sempre."
+        }
+      ]
+    },
+    "accettato": {
+      "text": "",
+      "type": "end_dialogue",
+      "action": {
+        "type": "blabber:command",
+        "value": "/function atherion:class/warrior"
+      }
+    },
+    "rifiuto": {
+      "text": "",
+      "type": "end_dialogue"
+    }
+  },
+  "layout": {
+    "type": "blabber:rpg"
+  },
+  "unskippable": false,
+  "start_at": "primodialogocapoguerriero"
+}

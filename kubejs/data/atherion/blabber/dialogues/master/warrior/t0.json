@@ -1,0 +1,47 @@
+{
+  "states": {
+    "secondodialogocapoguerriero": {
+      "text": "Ohhh, guerriero dimmi tutto",
+      "type": "default",
+      "choices": [
+        {
+          "next": "levelup",
+          "text": "Voglio diventare più forte"
+        },
+        {
+          "next": "information",
+          "text": "Come faccio a diventare più forte"
+        },
+        {
+          "next": "nothing",
+          "text": "Ciao ciao"
+        }
+      ]
+    },
+    "levelup": {
+      "text": "",
+      "type": "end_dialogue",
+      "action": {
+        "type": "blabber:command",
+        "value": ""
+      }
+    },
+    "information": {
+      "text": "",
+      "type": "end_dialogue",
+      "action": {
+        "type": "blabber:command",
+        "value": ""
+      }
+    },
+    "nothing": {
+      "text": "",
+      "type": "end_dialogue"
+    }
+  },
+  "layout": {
+    "type": "blabber:rpg"
+  },
+  "unskippable": false,
+  "start_at": "secondodialogocapoguerriero"
+}

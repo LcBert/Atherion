@@ -1,0 +1,35 @@
+{
+  "states": {
+    "primodialogocapofabbri": {
+      "text": "Hai le mani dure? Hai rispetto per il fuoco e per ciò che plasma? Bene. Qui nella Gilda dei Fabbri, non si parla: si batte, si crea, si scolpisce il futuro sull’incudine. Sei pronto a temprarti col ferro e col sudore?",
+      "type": "default",
+      "choices": [
+        {
+          "next": "accettato",
+          "text": "Sì! Voglio forgiare armi, armature e gloria. Che il martello diventi la mia voce!"
+        },
+        {
+          "next": "rifiuto",
+          "text": "Il fuoco non è ancora mio amico. Tornerò quando saprò reggerne il peso."
+        }
+      ]
+    },
+    "accettato": {
+      "text": "",
+      "type": "end_dialogue",
+      "action": {
+        "type": "blabber:command",
+        "value": "/function atherion:class/blacksmith"
+      }
+    },
+    "rifiuto": {
+      "text": "",
+      "type": "end_dialogue"
+    }
+  },
+  "layout": {
+    "type": "blabber:rpg"
+  },
+  "unskippable": false,
+  "start_at": "primodialogocapofabbri"
+}

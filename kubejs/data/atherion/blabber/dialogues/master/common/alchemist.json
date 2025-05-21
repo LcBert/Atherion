@@ -1,0 +1,35 @@
+{
+  "states": {
+    "primodialogocapoalchimisti": {
+      "text": "Materia, spirito, trasformazione... L’alchimia non è solo scienza, né pura magia. È l’arte di mutare l’impossibile in realtà. Se senti il richiamo del mistero, allora entra nella Gilda degli Alchimisti. Ma sappi: ogni pozione ha un prezzo, ogni verità... un rischio.",
+      "type": "default",
+      "choices": [
+        {
+          "next": "accettato",
+          "text": "Sì! Voglio imparare a distillare potere, conoscenza e mutare il mondo con un solo flacone!"
+        },
+        {
+          "next": "rifiuto",
+          "text": "La trasmutazione può attendere… non sono ancora pronto a cambiare me stesso."
+        }
+      ]
+    },
+    "accettato": {
+      "text": "",
+      "type": "end_dialogue",
+      "action": {
+        "type": "blabber:command",
+        "value": "/function atherion:class/alchimist"
+      }
+    },
+    "rifiuto": {
+      "text": "",
+      "type": "end_dialogue"
+    }
+  },
+  "layout": {
+    "type": "blabber:rpg"
+  },
+  "unskippable": false,
+  "start_at": "primodialogocapoalchimisti"
+}

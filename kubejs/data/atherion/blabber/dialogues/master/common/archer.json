@@ -1,0 +1,35 @@
+{
+  "states": {
+    "primodialogocapoarceri": {
+      "text": "Taci... ascolta il vento tra gli alberi. Ogni foglia che si muove racconta una storia. Tu, forestiero, hai la vista acuta e il cuore leggero… Vuoi forse apprendere l’arte dell’arco e unirti alla Gilda degli Arcieri?",
+      "type": "default",
+      "choices": [
+        {
+          "next": "accettato",
+          "text": "Sì, desidero scoccare frecce veloci come il vento e diventare tutt'uno con la foresta!"
+        },
+        {
+          "next": "rifiuto",
+          "text": "Non ora, forse quando il ventoi mi guiderà di nuovo qui."
+        }
+      ]
+    },
+    "accettato": {
+      "text": "",
+      "type": "end_dialogue",
+      "action": {
+        "type": "blabber:command",
+        "value": "/function atherion:class/archer"
+      }
+    },
+    "rifiuto": {
+      "text": "",
+      "type": "end_dialogue"
+    }
+  },
+  "layout": {
+    "type": "blabber:rpg"
+  },
+  "unskippable": false,
+  "start_at": "primodialogocapoarceri"
+}
