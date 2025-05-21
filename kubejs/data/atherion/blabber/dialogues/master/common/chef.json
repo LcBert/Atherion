@@ -1,29 +1,43 @@
 {
   "states": {
-    "primodialogocapocuochi": {
+    "first_master_chef": {
       "text": "Mmm... sento aroma d’ambizione! Sei forse qui per imparare l’arte del gusto, la scienza del sapore? Allora benvenuto, apprendista forchetta. La Gilda dei Cuochi apre le sue cucine solo a chi ha cuore… e palato.",
       "type": "default",
       "choices": [
         {
-          "next": "accettato",
+          "next": "are_you_sure",
           "text": "Sì! Voglio cucinare piatti leggendari, che risvegliano eroi e zittiscono i re!"
         },
         {
-          "next": "rifiuto",
+          "next": "refused",
           "text": "Il mio stomaco tace… ma tornerò affamato."
         }
       ]
     },
-    "accettato": {
-      "text": "",
+    "are_you_sure": {
+      "text": "Sei sicuro di voler impugnare la mestola e cucinare il tuo destino tra spezie e fuoco?",
+      "type": "default",
+      "choices": [
+        {
+          "next": "accept",
+          "text": "Sì, che inizi il banchetto!"
+        },
+        {
+          "next": "refused",
+          "text": "No, non ancora."
+        }
+      ]
+    },
+    "accept": {
+      "text": "Benvenuto nella Gilda dei Cuochi. Che le tue ricette scaldino lo spirito e sazino il mondo.",
       "type": "end_dialogue",
       "action": {
         "type": "blabber:command",
         "value": "/function atherion:class/chef"
       }
     },
-    "rifiuto": {
-      "text": "",
+    "refused": {
+      "text": "Anche il palato ha bisogno del suo tempo. Torna quando sarai affamato di sapori e avventure.",
       "type": "end_dialogue"
     }
   },
@@ -31,5 +45,5 @@
     "type": "blabber:rpg"
   },
   "unskippable": false,
-  "start_at": "primodialogocapocuochi"
+  "start_at": "first_master_chef"
 }

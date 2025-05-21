@@ -1,29 +1,43 @@
 {
   "states": {
-    "primodialogocapofattori": {
+    "first_master_farmer": {
       "text": "La terra ascolta solo chi la rispetta. Il grano, il latte, la lana… ogni cosa nasce da mani pazienti e occhi attenti. Se vuoi unirti alla Gilda dei Fattori, dovrai imparare a seminare speranza e raccogliere futuro.",
       "type": "default",
       "choices": [
         {
-          "next": "accettato",
+          "next": "are_you_sure",
           "text": "Sì! Voglio lavorare la terra, allevare il domani e nutrire questo regno con le mie mani!"
         },
         {
-          "next": "rifiuto",
+          "next": "refused",
           "text": "Non ancora… la mia zappa aspetta il momento giusto."
         }
       ]
     },
-    "accettato": {
-      "text": "",
+    "are_you_sure": {
+      "text": "Sei sicuro di voler affondare le mani nella terra e coltivare il futuro?",
+      "type": "default",
+      "choices": [
+        {
+          "next": "accept",
+          "text": "Sì, che cresca il raccolto!"
+        },
+        {
+          "next": "refused",
+          "text": "No, non sono ancora pronto."
+        }
+      ]
+    },
+    "accept": {
+      "text": "Benvenuto tra i Fattori. Ogni seme che pianterai porterà vita al nostro regno.",
       "type": "end_dialogue",
       "action": {
         "type": "blabber:command",
         "value": "/function atherion:class/farmer"
       }
     },
-    "rifiuto": {
-      "text": "",
+    "refused": {
+      "text": "Anche la terra attende. Torna quando sarai pronto a coltivare il tuo destino.",
       "type": "end_dialogue"
     }
   },
@@ -31,5 +45,5 @@
     "type": "blabber:rpg"
   },
   "unskippable": false,
-  "start_at": "primodialogocapofattori"
+  "start_at": "first_master_farmer"
 }

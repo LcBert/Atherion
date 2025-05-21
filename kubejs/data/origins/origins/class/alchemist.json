@@ -1,6 +1,6 @@
 {
     "powers": [
-        "origins:kit/alchimist"
+        "origins:kit/alchemist"
     ],
     "icon": {
         "item": "minecraft:potion"

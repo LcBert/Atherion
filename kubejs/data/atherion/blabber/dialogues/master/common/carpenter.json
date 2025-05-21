@@ -1,29 +1,43 @@
 {
   "states": {
-    "primodialogocapocarpentieri": {
+    "first_master_carpenter": {
       "text": "Ogni muro che regge, ogni ponte che unisce, ogni casa che protegge… nasce dalle mani di un carpentiere. Vuoi unire la tua forza e la tua precisione alla Gilda dei Carpentieri? Qui si costruisce il domani, tavola dopo tavola.",
       "type": "default",
       "choices": [
         {
-          "next": "accettato",
+          "next": "are_you_sure",
           "text": "Sì! Voglio costruire fortezze, rifugi e leggende scolpite nel legno!"
         },
         {
-          "next": "rifiuto",
+          "next": "refused",
           "text": "Non ancora. La mia mano non è pronta a misurare il mondo."
         }
       ]
     },
-    "accettato": {
-      "text": "",
+    "are_you_sure": {
+      "text": "Sei sicuro di voler scolpire il tuo destino nel legno e nel sudore? Una volta posata la prima trave, non si torna indietro.",
+      "type": "default",
+      "choices": [
+        {
+          "next": "accept",
+          "text": "Sì, che inizi la costruzione."
+        },
+        {
+          "next": "refused",
+          "text": "No, non ancora."
+        }
+      ]
+    },
+    "accept": {
+      "text": "Benvenuto tra le fila dei costruttori. Che le tue mani rendano il mondo un luogo più saldo e più giusto.",
       "type": "end_dialogue",
       "action": {
         "type": "blabber:command",
         "value": "/function atherion:class/carpenter"
       }
     },
-    "rifiuto": {
-      "text": "",
+    "refused": {
+      "text": "Ogni struttura ha bisogno del suo tempo per nascere. Torna quando sarai pronto a innalzare il tuo futuro.",
       "type": "end_dialogue"
     }
   },
@@ -31,5 +45,5 @@
     "type": "blabber:rpg"
   },
   "unskippable": false,
-  "start_at": "primodialogocapocarpentieri"
+  "start_at": "first_master_carpenter"
 }

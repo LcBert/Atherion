@@ -1,29 +1,43 @@
 {
   "states": {
-    "primodialogocapoguerriero": {
+    "first_master_warrior": {
       "text": "Salve, viandante. Vuoi diventare un vero guerriero? Lo leggo nei tuoi occhi… Forza, unisciti alla Gilda dei Guerrieri! Ti insegnerò tutte le arti del combattimento.",
       "type": "default",
       "choices": [
         {
-          "next": "accettato",
+          "next": "are_you_sure",
           "text": "Sì, desidero diventare un guerriero fortissimo, temuto e rispettato in ogni angolo del regno!"
         },
         {
-          "next": "rifiuto",
+          "next": "refused",
           "text": "Non ora, forse più tardi… Il destino è incerto, come sempre."
         }
       ]
     },
-    "accettato": {
-      "text": "",
+    "are_you_sure": {
+      "text": "Il sentiero del guerriero è duro e pieno di prove. Sei certo di voler impugnare la spada e affrontare ogni battaglia?",
+      "type": "default",
+      "choices": [
+        {
+          "next": "accept",
+          "text": "Sì. La mia spada è pronta, e il mio cuore lo è ancora di più."
+        },
+        {
+          "next": "refused",
+          "text": "Forse no… non oggi. Ma la fiamma arde in me, silenziosa."
+        }
+      ]
+    },
+    "accept": {
+      "text": "Benvenuto nella Gilda dei Guerrieri. Che la tua lama sia affilata e il tuo spirito incrollabile.",
       "type": "end_dialogue",
       "action": {
         "type": "blabber:command",
         "value": "/function atherion:class/warrior"
       }
     },
-    "rifiuto": {
-      "text": "",
+    "refused": {
+      "text": "Va’ allora, ma ricordati: il coraggio può attendere… ma non per sempre.",
       "type": "end_dialogue"
     }
   },
@@ -31,5 +45,5 @@
     "type": "blabber:rpg"
   },
   "unskippable": false,
-  "start_at": "primodialogocapoguerriero"
+  "start_at": "first_master_warrior"
 }

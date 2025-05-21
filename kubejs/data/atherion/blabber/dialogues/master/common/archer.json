@@ -1,35 +1,49 @@
 {
   "states": {
-    "primodialogocapoarceri": {
-      "text": "Taci... ascolta il vento tra gli alberi. Ogni foglia che si muove racconta una storia. Tu, forestiero, hai la vista acuta e il cuore leggero… Vuoi forse apprendere l’arte dell’arco e unirti alla Gilda degli Arcieri?",
+    "first_master_archer": {
+      "text": "Taci... ascolta il vento tra gli alberi. Ogni foglia che si muove racconta una storia. Tu, forestiero, hai la vista acuta e il cuore leggero... Vuoi forse apprendere l’arte dell’arco e unirti alla Gilda degli Arcieri?",
       "type": "default",
       "choices": [
         {
-          "next": "accettato",
-          "text": "Sì, desidero scoccare frecce veloci come il vento e diventare tutt'uno con la foresta!"
+          "next": "are_you_sure",
+          "text": "Sì, desidero scoccare frecce veloci come il vento e diventare tutt’uno con la foresta!"
         },
         {
-          "next": "rifiuto",
-          "text": "Non ora, forse quando il ventoi mi guiderà di nuovo qui."
+          "next": "refused",
+          "text": "Non ora, forse quando il vento mi guiderà di nuovo qui."
         }
       ]
     },
-    "accettato": {
-      "text": "",
+    "accept": {
+      "text": "Benvenuto tra noi. Che le tue frecce volino dritte e il vento sia sempre tuo alleato.",
       "type": "end_dialogue",
       "action": {
         "type": "blabber:command",
         "value": "/function atherion:class/archer"
       }
     },
-    "rifiuto": {
-      "text": "",
+    "refused": {
+      "text": "La foresta non dimentica. Quando sarai pronto, essa ti parlerà di nuovo.",
       "type": "end_dialogue"
+    },
+    "are_you_sure": {
+      "text": "Sei sicuro di voler abbracciare la via silenziosa dell’arciere? Una volta scoccata la prima freccia, non si torna indietro.",
+      "type": "default",
+      "choices": [
+        {
+          "next": "accept",
+          "text": "Sì, sono pronto."
+        },
+        {
+          "next": "refused",
+          "text": "No, non ancora."
+        }
+      ]
     }
   },
   "layout": {
     "type": "blabber:rpg"
   },
   "unskippable": false,
-  "start_at": "primodialogocapoarceri"
+  "start_at": "first_master_archer"
 }

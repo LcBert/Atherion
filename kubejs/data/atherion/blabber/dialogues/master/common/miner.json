@@ -1,29 +1,43 @@
 {
   "states": {
-    "primodialogocaporaccoglitori": {
+    "first_master_miner": {
       "text": "Il suono del piccone sulla pietra… l’odore della roccia viva… Chi non ha mai sporcato le mani con la terra non conosce il vero valore di ciò che brilla. Tu, viandante… hai la stoffa per diventare un Raccoglitore? La Gilda ha sempre bisogno di mani forti e occhi attenti.",
       "type": "default",
       "choices": [
         {
-          "next": "accettato",
+          "next": "are_you_sure",
           "text": "Sì! Voglio scendere nelle profondità, trovare ciò che gli altri ignorano e riportarlo alla luce!"
         },
         {
-          "next": "rifiuto",
+          "next": "refused",
           "text": "Forse un giorno. Per ora, il mio cammino resta in superficie."
         }
       ]
     },
-    "accettato": {
-      "text": "",
+    "are_you_sure": {
+      "text": "Le profondità non perdonano l’esitazione. Sei sicuro di voler diventare un Raccoglitore?",
+      "type": "default",
+      "choices": [
+        {
+          "next": "accept",
+          "text": "Sì. Che la roccia riveli i suoi segreti!"
+        },
+        {
+          "next": "refused",
+          "text": "No. Meglio aspettare il momento giusto."
+        }
+      ]
+    },
+    "accept": {
+      "text": "Benvenuto tra i Raccoglitori. Che le tue mani scoprano ricchezze nascoste e percorsi dimenticati.",
       "type": "end_dialogue",
       "action": {
         "type": "blabber:command",
         "value": "/function atherion:class/miner"
       }
     },
-    "rifiuto": {
-      "text": "",
+    "refused": {
+      "text": "Ogni vena d’oro attende il suo cercatore. Torna quando sarai pronto a scavare nel cuore della terra.",
       "type": "end_dialogue"
     }
   },
@@ -31,5 +45,5 @@
     "type": "blabber:rpg"
   },
   "unskippable": false,
-  "start_at": "primodialogocaporaccoglitori"
+  "start_at": "first_master_miner"
 }

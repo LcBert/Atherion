@@ -271,6 +271,9 @@
     },
     "origins:class/blacksmith": {
       "enabled": true
+    },
+    "origins:class/alchemist": {
+      "enabled": true
     }
   }
 }

@@ -1,35 +1,49 @@
 {
   "states": {
-    "primodialogocapobardi": {
+    "first_master_bard": {
       "text": "Ah, un volto nuovo! C’è musica nei tuoi occhi e poesia nel tuo passo… Dimmi, viandante: vuoi trasformare il mondo in una canzone? Unisciti alla Gilda dei Bardi, e farai vibrare corde e cuori!",
       "type": "default",
       "choices": [
         {
-          "next": "accettato",
+          "next": "are_you_sure",
           "text": "Sì! Voglio incantare il regno con ballate, leggende e melodie immortali!"
         },
         {
-          "next": "rifiuto",
+          "next": "refused",
           "text": "La mia voce tace oggi… ma forse un giorno canterà con voi."
         }
       ]
     },
-    "accettato": {
-      "text": "",
+    "accept": {
+      "text": "Benvenuto, menestrello dell’anima. Che ogni tua nota risuoni nei cuori e riecheggi nei secoli.",
       "type": "end_dialogue",
       "action": {
         "type": "blabber:command",
         "value": "/function atherion:class/bard"
       }
     },
-    "rifiuto": {
-      "text": "",
+    "refused": {
+      "text": "Anche il silenzio ha la sua melodia. Quando sarai pronto a cantare, la Gilda ascolterà.",
       "type": "end_dialogue"
+    },
+    "are_you_sure": {
+      "text": "Sei certo di voler affidare il tuo destino alla musica e alle parole? Da quel momento, ogni canto sarà verità… o leggenda.",
+      "type": "default",
+      "choices": [
+        {
+          "next": "accept",
+          "text": "Sì, sono pronto."
+        },
+        {
+          "next": "refused",
+          "text": "No, non ancora."
+        }
+      ]
     }
   },
   "layout": {
     "type": "blabber:rpg"
   },
   "unskippable": false,
-  "start_at": "primodialogocapobardi"
+  "start_at": "first_master_bard"
 }

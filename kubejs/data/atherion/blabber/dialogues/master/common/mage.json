@@ -1,29 +1,43 @@
 {
   "states": {
-    "primodialogocapomaghi": {
+    "first_master_mage": {
       "text": "Ah... un'anima irrequieta si presenta dinanzi alle soglie del Sapere. Dimmi, viandante: sei giunto per caso… o è stata la magia stessa a condurti qui? Se cerchi di elevar mente e spirito, la Gilda dei Maghi è il sentiero che attende i degni.",
       "type": "default",
       "choices": [
         {
-          "next": "accettato",
+          "next": "are_you_sure",
           "text": "Sì. Bramo conoscere l'invisibile, dominare l'ignoto, e scrivere il mio nome tra le stelle."
         },
         {
-          "next": "rifiuto",
+          "next": "refused",
           "text": "Non ancora. Le stelle non hanno parlato… per ora."
         }
       ]
     },
-    "accettato": {
-      "text": "",
+    "are_you_sure": {
+      "text": "Non tutti sopportano il peso del sapere arcano. Sei certo di voler varcare questa soglia?",
+      "type": "default",
+      "choices": [
+        {
+          "next": "accept",
+          "text": "Sì. Che le stelle guidino la mia mano."
+        },
+        {
+          "next": "refused",
+          "text": "No, non ancora. Tornerò quando sarò pronto."
+        }
+      ]
+    },
+    "accept": {
+      "text": "Benvenuto nella Gilda dei Maghi. Che la tua mente sia affilata quanto la tua volontà.",
       "type": "end_dialogue",
       "action": {
         "type": "blabber:command",
         "value": "/function atherion:class/mage"
       }
     },
-    "rifiuto": {
-      "text": "",
+    "refused": {
+      "text": "Ogni incanto ha il suo tempo. Torna quando sarai pronto a scrivere incanti e destino.",
       "type": "end_dialogue"
     }
   },
@@ -31,5 +45,5 @@
     "type": "blabber:rpg"
   },
   "unskippable": false,
-  "start_at": "primodialogocapomaghi"
+  "start_at": "first_master_mage"
 }

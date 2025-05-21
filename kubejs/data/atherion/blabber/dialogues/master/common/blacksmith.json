@@ -1,35 +1,49 @@
 {
   "states": {
-    "primodialogocapofabbri": {
-      "text": "Hai le mani dure? Hai rispetto per il fuoco e per ciò che plasma? Bene. Qui nella Gilda dei Fabbri, non si parla: si batte, si crea, si scolpisce il futuro sull’incudine. Sei pronto a temprarti col ferro e col sudore?",
+    "first_master_blacksmith": {
+      "text": "Hai le mani dure? Rispetti il fuoco e ciò che esso plasma? Bene. Nella Gilda dei Fabbri non si parla: si batte, si crea, si scolpisce il futuro sull’incudine. Sei pronto a temprarti col ferro e col sudore?",
       "type": "default",
       "choices": [
         {
-          "next": "accettato",
+          "next": "are_you_sure",
           "text": "Sì! Voglio forgiare armi, armature e gloria. Che il martello diventi la mia voce!"
         },
         {
-          "next": "rifiuto",
-          "text": "Il fuoco non è ancora mio amico. Tornerò quando saprò reggerne il peso."
+          "next": "refused",
+          "text": "Il fuoco non è ancora mio alleato. Tornerò quando saprò reggerne il peso."
         }
       ]
     },
-    "accettato": {
-      "text": "",
+    "accept": {
+      "text": "Benvenuto, fratello del metallo. Da oggi, ogni colpo sull’incudine parlerà per te.",
       "type": "end_dialogue",
       "action": {
         "type": "blabber:command",
         "value": "/function atherion:class/blacksmith"
       }
     },
-    "rifiuto": {
-      "text": "",
+    "refused": {
+      "text": "Torna quando le tue mani non temeranno il calore… e il cuore saprà resistere al peso del ferro.",
       "type": "end_dialogue"
+    },
+    "are_you_sure": {
+      "text": "Sei sicuro di voler entrare nella fucina eterna? Non c’è musica qui, solo martello, acciaio e sacrificio.",
+      "type": "default",
+      "choices": [
+        {
+          "next": "accept",
+          "text": "Sì, sono pronto a forgiare il mio destino."
+        },
+        {
+          "next": "refused",
+          "text": "No, non ancora."
+        }
+      ]
     }
   },
   "layout": {
     "type": "blabber:rpg"
   },
   "unskippable": false,
-  "start_at": "primodialogocapofabbri"
+  "start_at": "first_master_blacksmith"
 }

@@ -1,29 +1,43 @@
 {
   "states": {
-    "primodialogocapodelleombre": {
+    "first_master_shadow": {
       "text": "Non tutti vedono ciò che si cela nell’ombra… ma tu sì. I tuoi passi sono leggeri, i tuoi occhi attenti. Dimmi, straniero... vuoi lasciare la luce alle spalle e unirti alla Gilda delle Ombre?",
       "type": "default",
       "choices": [
         {
-          "next": "accettato",
+          "next": "are_you_sure",
           "text": "Sì… voglio muovermi tra le ombre, colpire senza essere visto, e sussurrare segreti che nessuno osa dire ad alta voce."
         },
         {
-          "next": "rifiuto",
+          "next": "refused",
           "text": "Le tenebre mi affascinano… ma oggi resto alla luce. Forse un giorno, quando cadrà la luna."
         }
       ]
     },
-    "accettato": {
-      "text": "",
+    "are_you_sure": {
+      "text": "Una volta varcata la soglia dell’ombra, non potrai più tornare indietro. Sei sicuro?",
+      "type": "default",
+      "choices": [
+        {
+          "next": "accept",
+          "text": "Sì. Il silenzio sarà la mia voce, la notte il mio mantello."
+        },
+        {
+          "next": "refused",
+          "text": "No. Non ancora... ma le ombre sanno attendere."
+        }
+      ]
+    },
+    "accept": {
+      "text": "Benvenuto nell'ombra. Da ora, sarai il sussurro che muove il destino.",
       "type": "end_dialogue",
       "action": {
         "type": "blabber:command",
         "value": "/function atherion:class/shadow"
       }
     },
-    "rifiuto": {
-      "text": "",
+    "refused": {
+      "text": "L'oscurità non dimentica. Quando sarai pronto, essa sarà lì ad accoglierti.",
       "type": "end_dialogue"
     }
   },
@@ -31,5 +45,5 @@
     "type": "blabber:rpg"
   },
   "unskippable": false,
-  "start_at": "primodialogocapodelleombre"
+  "start_at": "first_master_shadow"
 }

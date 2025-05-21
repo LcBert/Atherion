@@ -1,35 +1,49 @@
 {
   "states": {
-    "primodialogocapoalchimisti": {
-      "text": "Materia, spirito, trasformazione... L’alchimia non è solo scienza, né pura magia. È l’arte di mutare l’impossibile in realtà. Se senti il richiamo del mistero, allora entra nella Gilda degli Alchimisti. Ma sappi: ogni pozione ha un prezzo, ogni verità... un rischio.",
+    "first_master_alchemist": {
+      "text": "Materia, spirito, trasformazione... L’alchimia non è solo scienza, né pura magia. È l’arte di mutare l’impossibile in realtà. Se senti il richiamo del mistero, allora entra nella Gilda degli Alchimisti. Ma ricorda: ogni pozione ha un prezzo, e ogni verità... un rischio.",
       "type": "default",
       "choices": [
         {
-          "next": "accettato",
+          "next": "are_you_sure",
           "text": "Sì! Voglio imparare a distillare potere, conoscenza e mutare il mondo con un solo flacone!"
         },
         {
-          "next": "rifiuto",
+          "next": "refused",
           "text": "La trasmutazione può attendere… non sono ancora pronto a cambiare me stesso."
         }
       ]
     },
-    "accettato": {
-      "text": "",
+    "accept": {
+      "text": "Benvenuto, apprendista alchimista. Il tuo viaggio verso la verità inizia ora.",
       "type": "end_dialogue",
       "action": {
         "type": "blabber:command",
-        "value": "/function atherion:class/alchimist"
+        "value": "/function atherion:class/alchemist"
       }
     },
-    "rifiuto": {
-      "text": "",
+    "refused": {
+      "text": "Molto bene. Quando sarai pronto a trasformare il tuo destino, la Gilda sarà qui ad aspettarti.",
       "type": "end_dialogue"
+    },
+    "are_you_sure": {
+      "text": "Sei davvero pronto ad abbracciare l’alchimia e ciò che comporta? Una volta iniziato, non potrai tornare indietro.",
+      "type": "default",
+      "choices": [
+        {
+          "text": "Sì, sono pronto.",
+          "next": "accept"
+        },
+        {
+          "text": "No, ho bisogno di più tempo.",
+          "next": "refused"
+        }
+      ]
     }
   },
   "layout": {
     "type": "blabber:rpg"
   },
   "unskippable": false,
-  "start_at": "primodialogocapoalchimisti"
+  "start_at": "first_master_alchemist"
 }
