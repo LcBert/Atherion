@@ -1,17 +1,17 @@
 {
   "states": {
-    "wrong_guild_warning": {
-      "text": "Sho sho… questa non è la tua gilda, guerriero. Le tue mani impugnano la spada, non un arco, né frecce…",
+    "friendly_chat": {
+      "text": "Ah, fratello delle arti arcane! Le tue magie illuminano i cieli, le mie pozioni ribollono nei calderoni. È sempre un onore incrociare i nostri cammini.",
       "type": "default",
       "choices": [
         {
           "next": "end",
-          "text": "Capito, me ne vado."
+          "text": "E che l’alchimia continui a stupirci entrambi!"
         }
       ]
     },
     "end": {
-      "text": "Torna al tuo cammino, dove battaglie e gloria ti attendono.",
+      "text": "Alle prossime scoperte, collega. Che la conoscenza ti guidi come una stella nella notte.",
       "type": "end_dialogue"
     }
   },
@@ -19,5 +19,5 @@
     "type": "blabber:rpg"
   },
   "unskippable": false,
-  "start_at": "wrong_guild_warning"
+  "start_at": "friendly_chat"
 }

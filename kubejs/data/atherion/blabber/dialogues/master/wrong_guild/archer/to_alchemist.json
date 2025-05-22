@@ -1,17 +1,17 @@
 {
   "states": {
-    "alchemist_warning": {
-      "text": "Ah… un arciere! Le tue frecce sono affilate, ma qui si mescolano essenze, non si scoccano dardi.",
+    "neutral_remark": {
+      "text": "Occhio attento e mano ferma… ma non sei qui per distillare essenze. Le tue frecce volano, le mie miscele esplodono. Strade diverse, stessa precisione.",
       "type": "default",
       "choices": [
         {
           "next": "end",
-          "text": "Chiedo scusa, torno alla mia postazione."
+          "text": "Giusto. Torno al mio bersaglio."
         }
       ]
     },
     "end": {
-      "text": "Che gli Dei guidino il tuo tiro… e tieni lontano l’arco dai miei alambicchi.",
+      "text": "Che il vento segua sempre il volo delle tue frecce. La scienza, come l’arco, richiede pazienza.",
       "type": "end_dialogue"
     }
   },
@@ -19,5 +19,5 @@
     "type": "blabber:rpg"
   },
   "unskippable": false,
-  "start_at": "alchemist_warning"
+  "start_at": "neutral_remark"
 }
