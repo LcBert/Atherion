@@ -1,17 +1,17 @@
 {
   "states": {
-    "wrong_guild_warning": {
-      "text": "Sho sho… questa non è la tua gilda, guerriero. Le tue mani impugnano la spada, non un arco, né frecce…",
+    "neutral_conversation": {
+      "text": "Ah, un fattore. Le tue terre sono vastissime, ma non credo che tu possa comprendere davvero cosa significhi muoversi silenziosamente tra le ombre della foresta. Ogni giorno in cui cammino nella natura, imparo qualcosa di nuovo, mentre tu, immagino, studi la terra e le sue stagioni.",
       "type": "default",
       "choices": [
         {
           "next": "end",
-          "text": "Capito, me ne vado."
+          "text": " ognuno con il proprio compito. Continuiamo a fare ciò che dobbiamo fare, senza intrometterci troppo nelle vite degli altri."
         }
       ]
     },
     "end": {
-      "text": "Torna al tuo cammino, dove battaglie e gloria ti attendono.",
+      "text": "Nel nostro mondo, ci sono tanti lavori, e non tutti si incrociano. Tu lavori la terra, io lavoro nella foresta. Ma c'è rispetto, e questo basta. Buona fortuna nelle tue campagne.",
       "type": "end_dialogue"
     }
   },
@@ -19,5 +19,5 @@
     "type": "blabber:rpg"
   },
   "unskippable": false,
-  "start_at": "wrong_guild_warning"
+  "start_at": "neutral_conversation"
 }

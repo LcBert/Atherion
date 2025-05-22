@@ -1,0 +1,23 @@
+{
+  "states": {
+    "friendly_chat": {
+      "text": "Ah, fratello delle arti arcane! Le tue magie illuminano i cieli, le mie pozioni ribollono nei calderoni. È sempre un onore incrociare i nostri cammini.",
+      "type": "default",
+      "choices": [
+        {
+          "next": "end",
+          "text": "E che l’alchimia continui a stupirci entrambi!"
+        }
+      ]
+    },
+    "end": {
+      "text": "Alle prossime scoperte, collega. Che la conoscenza ti guidi come una stella nella notte.",
+      "type": "end_dialogue"
+    }
+  },
+  "layout": {
+    "type": "blabber:rpg"
+  },
+  "unskippable": false,
+  "start_at": "friendly_chat"
+}

@@ -1,7 +1,7 @@
 {
   "states": {
     "neutral_warning": {
-      "text": "Salute a te. Le tue mani conoscono la terra e la semina, non fiale e formule. Sei un uomo dei campi, non dei laboratori alchemici.",
+      "text": "Salute a te. Le tue mani conoscono la terra e la semina, non fiale e formule. Sei un uomo dei campi, non dei laboratori.",
       "type": "default",
       "choices": [
         {
