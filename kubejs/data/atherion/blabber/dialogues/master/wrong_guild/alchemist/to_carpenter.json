@@ -1,0 +1,23 @@
+{
+  "states": {
+    "neutral_greeting": {
+      "text": "Mh… legno e chiodi, non provette e pozioni. Sei un carpentiere, non uno studioso del mercurio.",
+      "type": "default",
+      "choices": [
+        {
+          "next": "end",
+          "text": "Hai ragione, continuo con i miei lavori."
+        }
+      ]
+    },
+    "end": {
+      "text": "Fa' buon uso del tuo martello. Le formule si scrivono in laboratorio, ma anche i muri hanno bisogno di reggersi.",
+      "type": "end_dialogue"
+    }
+  },
+  "layout": {
+    "type": "blabber:rpg"
+  },
+  "unskippable": false,
+  "start_at": "neutral_greeting"
+}

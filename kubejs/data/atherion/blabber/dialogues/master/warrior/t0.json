@@ -1,41 +1,41 @@
 {
   "states": {
-    "secondodialogocapoguerriero": {
-      "text": "Ohhh, guerriero dimmi tutto",
+    "second_master_warrior": {
+      "text": "Ah, sei tornato! Gli occhi non mentono: c'è fame di battaglia nei tuoi. Dimmi, giovane guerriero… cosa desideri?",
       "type": "default",
       "choices": [
         {
-          "next": "levelup",
-          "text": "Voglio diventare più forte"
+          "next": "level_up",
+          "text": "Voglio diventare più forte, padroneggiare la mia forza e superare ogni limite!"
         },
         {
-          "next": "information",
-          "text": "Come faccio a diventare più forte"
+          "next": "get_info",
+          "text": "Maestro, cosa devo fare per diventare più forte?"
         },
         {
-          "next": "nothing",
-          "text": "Ciao ciao"
+          "next": "goodbye",
+          "text": "Per ora mi allontano… ma il mio spirito rimane vigile."
         }
       ]
     },
-    "levelup": {
-      "text": "",
+    "level_up": {
+      "text": "Così dev’essere! Ogni goccia di sudore, ogni cicatrice sarà il prezzo della tua grandezza. Che la tua forza cresca come l’onda prima della tempesta!",
       "type": "end_dialogue",
       "action": {
         "type": "blabber:command",
-        "value": ""
+        "value": "/function atherion:class/warrior/levelup"
       }
     },
-    "information": {
-      "text": "",
+    "get_info": {
+      "text": "La forza non nasce solo dal braccio, ma dalla mente e dal cuore. Affronta sfide, vinci battaglie, e non temere la sconfitta: essa è la fucina del vero guerriero.",
       "type": "end_dialogue",
       "action": {
         "type": "blabber:command",
-        "value": ""
+        "value": "/function atherion:class/warrior/info"
       }
     },
-    "nothing": {
-      "text": "",
+    "goodbye": {
+      "text": "Addio, guerriero. Che la tua lama resti affilata e il tuo spirito saldo. Torna quando la tua sete di gloria griderà più forte del silenzio.",
       "type": "end_dialogue"
     }
   },
@@ -43,5 +43,5 @@
     "type": "blabber:rpg"
   },
   "unskippable": false,
-  "start_at": "secondodialogocapoguerriero"
+  "start_at": "second_master_warrior"
 }

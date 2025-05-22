@@ -1,0 +1,23 @@
+{
+  "states": {
+    "neutral_remark": {
+      "text": "Spada e scudo, non provette e polveri. Tu combatti sul campo, io lo faccio nel laboratorio.",
+      "type": "default",
+      "choices": [
+        {
+          "next": "end",
+          "text": "Giusto, ognuno con la sua battaglia."
+        }
+      ]
+    },
+    "end": {
+      "text": "Che la tua lama sia sempre affilata, e che i miei composti non falliscano mai. A presto, guerriero.",
+      "type": "end_dialogue"
+    }
+  },
+  "layout": {
+    "type": "blabber:rpg"
+  },
+  "unskippable": false,
+  "start_at": "neutral_remark"
+}

@@ -1,0 +1,23 @@
+{
+  "states": {
+    "alchemist_warning": {
+      "text": "Ah… un arciere! Le tue frecce sono affilate, ma qui si mescolano essenze, non si scoccano dardi.",
+      "type": "default",
+      "choices": [
+        {
+          "next": "end",
+          "text": "Chiedo scusa, torno alla mia postazione."
+        }
+      ]
+    },
+    "end": {
+      "text": "Che gli Dei guidino il tuo tiro… e tieni lontano l’arco dai miei alambicchi.",
+      "type": "end_dialogue"
+    }
+  },
+  "layout": {
+    "type": "blabber:rpg"
+  },
+  "unskippable": false,
+  "start_at": "alchemist_warning"
+}

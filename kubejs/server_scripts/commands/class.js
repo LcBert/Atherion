@@ -29,9 +29,7 @@ ServerEvents.commandRegistry(event => {
                         const activator = command_event.getSource().getPlayerOrException()
                         const target = Arguments.PLAYER.getResult(command_event, "player")
                         activator.tell(target.persistentData.get("atherion_class_level"))
-                        activator.tell(
-                            ""
-                        )
+                        activator.tell(target.persistentData.get("atherion_class_type"))
                         return 1
                     })
                 )

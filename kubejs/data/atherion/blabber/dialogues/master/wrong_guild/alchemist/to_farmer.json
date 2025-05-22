@@ -1,0 +1,23 @@
+{
+  "states": {
+    "neutral_warning": {
+      "text": "Salute a te. Le tue mani conoscono la terra e la semina, non fiale e formule. Sei un uomo dei campi, non dei laboratori alchemici.",
+      "type": "default",
+      "choices": [
+        {
+          "next": "end",
+          "text": "Hai ragione, torno ai miei doveri."
+        }
+      ]
+    },
+    "end": {
+      "text": "Che il raccolto sia generoso, e la tua terra sempre viva.",
+      "type": "end_dialogue"
+    }
+  },
+  "layout": {
+    "type": "blabber:rpg"
+  },
+  "unskippable": false,
+  "start_at": "neutral_warning"
+}
