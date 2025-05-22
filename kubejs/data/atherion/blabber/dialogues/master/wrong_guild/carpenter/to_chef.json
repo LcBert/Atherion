@@ -1,17 +1,17 @@
 {
   "states": {
-    "wrong_guild_warning": {
-      "text": "Sho sho… questa non è la tua gilda, guerriero. Le tue mani impugnano la spada, non un arco, né frecce…",
+    "neutral_conversation": {
+      "text": "Cuoco, ho notato che il tuo nuovo forno funziona a meraviglia. La struttura che ho costruito regge bene il calore?",
       "type": "default",
       "choices": [
         {
-          "next": "end",
-          "text": "Capito, me ne vado."
+          "text": "Assolutamente, Carpentiere! Grazie alla tua maestria, le mie pietanze cuociono in modo uniforme. I clienti sono entusiasti.",
+          "next": "end"
         }
       ]
     },
     "end": {
-      "text": "Torna al tuo cammino, dove battaglie e gloria ti attendono.",
+      "text": "Sono felice di sentire che il mio lavoro contribuisce al tuo successo. Continuiamo a collaborare per deliziare il villaggio.",
       "type": "end_dialogue"
     }
   },
@@ -19,5 +19,5 @@
     "type": "blabber:rpg"
   },
   "unskippable": false,
-  "start_at": "wrong_guild_warning"
+  "start_at": "neutral_conversation"
 }

@@ -1,17 +1,17 @@
 {
   "states": {
-    "brotherly_remark": {
-      "text": "Ah, compagno di battaglia. Le nostre mani sono state forgiate nella stessa lotta. Non siamo solo fratelli di armi, ma di cuore. Se una delle gemelle comanda, l'altra segue, ma il nostro legame è ciò che ci tiene uniti.",
+    "wrong_guild_warning": {
+      "text": "Sho sho… questa non è la tua gilda, guerriero. Le tue mani impugnano la spada, non un arco, né frecce…",
       "type": "default",
       "choices": [
         {
           "next": "end",
-          "text": "Sì, non è mai facile scegliere tra due cuori uguali. Ma insieme possiamo affrontare qualsiasi cosa."
+          "text": "Capito, me ne vado."
         }
       ]
     },
     "end": {
-      "text": "Insieme, in questa lotta come in tutte le altre, non importa chi guida. La nostra forza è la stessa, fratello.",
+      "text": "Torna al tuo cammino, dove battaglie e gloria ti attendono.",
       "type": "end_dialogue"
     }
   },
@@ -19,5 +19,5 @@
     "type": "blabber:rpg"
   },
   "unskippable": false,
-  "start_at": "brotherly_remark"
+  "start_at": "wrong_guild_warning"
 }

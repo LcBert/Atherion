@@ -1,17 +1,17 @@
 {
   "states": {
-    "wrong_guild_warning": {
-      "text": "Sho sho… questa non è la tua gilda, guerriero. Le tue mani impugnano la spada, non un arco, né frecce…",
+    "neutral_conversation": {
+      "text": "Fabbro, la tua ultima creazione ha resistito a colpi che avrebbero spezzato qualsiasi altra arma. La tua maestria è ineguagliabile.",
       "type": "default",
       "choices": [
         {
-          "next": "end",
-          "text": "Capito, me ne vado."
+          "text": "Guerriero, la tua forza dà vita al metallo che forgio. Senza di te, le mie armi sarebbero solo pezzi di ferro.",
+          "next": "end"
         }
       ]
     },
     "end": {
-      "text": "Torna al tuo cammino, dove battaglie e gloria ti attendono.",
+      "text": "Continuiamo a lavorare insieme, allora. La tua forgia e la mia spada renderanno il nostro regno invincibile.",
       "type": "end_dialogue"
     }
   },
@@ -19,5 +19,5 @@
     "type": "blabber:rpg"
   },
   "unskippable": false,
-  "start_at": "wrong_guild_warning"
+  "start_at": "neutral_conversation"
 }

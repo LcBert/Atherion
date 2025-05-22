@@ -1,17 +1,17 @@
 {
   "states": {
-    "wrong_guild_warning": {
-      "text": "Sho sho… questa non è la tua gilda, guerriero. Le tue mani impugnano la spada, non un arco, né frecce…",
+    "neutral_conversation": {
+      "text": "Mago, ho notato che le tue magie hanno migliorato la crescita delle nostre colture. Potremmo collaborare per sviluppare un incantesimo che protegga i raccolti dalle intemperie?",
       "type": "default",
       "choices": [
         {
-          "next": "end",
-          "text": "Capito, me ne vado."
+          "text": "Certamente, Capo Contadino. Ho alcune formule che potrebbero creare una barriera protettiva contro le tempeste. Discutiamone insieme.",
+          "next": "end"
         }
       ]
     },
     "end": {
-      "text": "Torna al tuo cammino, dove battaglie e gloria ti attendono.",
+      "text": "Perfetto! La tua conoscenza della magia combinata con la nostra esperienza nei campi porterà grandi benefici al villaggio.",
       "type": "end_dialogue"
     }
   },
@@ -19,5 +19,5 @@
     "type": "blabber:rpg"
   },
   "unskippable": false,
-  "start_at": "wrong_guild_warning"
+  "start_at": "neutral_conversation"
 }

@@ -1,17 +1,17 @@
 {
   "states": {
-    "wrong_guild_warning": {
-      "text": "Sho sho… questa non è la tua gilda, guerriero. Le tue mani impugnano la spada, non un arco, né frecce…",
+    "neutral_conversation": {
+      "text": "Le tue melodie, amico bardo, hanno il potere di incantare anche le menti più razionali. La tua arte è una forma di magia che il mio grimorio non può contenere.",
       "type": "default",
       "choices": [
         {
-          "next": "end",
-          "text": "Capito, me ne vado."
+          "text": "E le tue incantazioni, caro mago, trasformano la realtà in modi che la mia musica può solo sognare. Insieme, possiamo creare meraviglie che nessuno dei due potrebbe realizzare da solo.",
+          "next": "end"
         }
       ]
     },
     "end": {
-      "text": "Torna al tuo cammino, dove battaglie e gloria ti attendono.",
+      "text": "Allora uniamo le nostre arti, bardo. Che la tua musica e la mia magia danzino insieme, portando luce e speranza ovunque andiamo.",
       "type": "end_dialogue"
     }
   },
@@ -19,5 +19,5 @@
     "type": "blabber:rpg"
   },
   "unskippable": false,
-  "start_at": "wrong_guild_warning"
+  "start_at": "neutral_conversation"
 }

@@ -1,17 +1,17 @@
 {
   "states": {
-    "wrong_guild_warning": {
-      "text": "Sho sho… questa non è la tua gilda, guerriero. Le tue mani impugnano la spada, non un arco, né frecce…",
+    "neutral_greeting": {
+      "text": "Mh… legno e chiodi, non provette e pozioni. Sei un carpentiere, non uno studioso del mercurio.",
       "type": "default",
       "choices": [
         {
           "next": "end",
-          "text": "Capito, me ne vado."
+          "text": "Hai ragione, continuo con i miei lavori."
         }
       ]
     },
     "end": {
-      "text": "Torna al tuo cammino, dove battaglie e gloria ti attendono.",
+      "text": "Fa' buon uso del tuo martello. Le formule si scrivono in laboratorio, ma anche i muri hanno bisogno di reggersi.",
       "type": "end_dialogue"
     }
   },
@@ -19,5 +19,5 @@
     "type": "blabber:rpg"
   },
   "unskippable": false,
-  "start_at": "wrong_guild_warning"
+  "start_at": "neutral_greeting"
 }

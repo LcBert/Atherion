@@ -1,17 +1,17 @@
 {
   "states": {
-    "wrong_guild_warning": {
-      "text": "Sho sho… questa non è la tua gilda, guerriero. Le tue mani impugnano la spada, non un arco, né frecce…",
+    "neutral_conversation": {
+      "text": "Fabbro, ho notato che le tue nuove incudini si adattano perfettamente. Le strutture che ho costruito per te soddisfano le tue esigenze?",
       "type": "default",
       "choices": [
         {
-          "next": "end",
-          "text": "Capito, me ne vado."
+          "text": "Assolutamente, Carpentiere! Grazie alla tua maestria, le mie incudini sono stabili e ben posizionate. È un piacere lavorare con un supporto così ben fatto.",
+          "next": "end"
         }
       ]
     },
     "end": {
-      "text": "Torna al tuo cammino, dove battaglie e gloria ti attendono.",
+      "text": "Sono lieto che il mio lavoro contribuisca al tuo successo nella forgiatura. Continuiamo a collaborare per il bene del nostro villaggio.",
       "type": "end_dialogue"
     }
   },
@@ -19,5 +19,5 @@
     "type": "blabber:rpg"
   },
   "unskippable": false,
-  "start_at": "wrong_guild_warning"
+  "start_at": "neutral_conversation"
 }

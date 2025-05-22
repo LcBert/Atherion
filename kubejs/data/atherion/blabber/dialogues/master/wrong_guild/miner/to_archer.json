@@ -1,17 +1,17 @@
 {
   "states": {
-    "respectful_remark": {
-      "text": "Tu scendi nel buio per raccogliere ciò che altri non osano nemmeno cercare. Non sei un cacciatore, ma la tua forza sta nel coraggio di affrontare il pericolo. Per quanto sia il mio dovere proteggere gli altri, so che senza il tuo lavoro la nostra causa sarebbe più difficile.",
+    "wrong_guild_warning": {
+      "text": "Sho sho… questa non è la tua gilda, guerriero. Le tue mani impugnano la spada, non un arco, né frecce…",
       "type": "default",
       "choices": [
         {
           "next": "end",
-          "text": "Apprezzo il tuo riguardo, capo gilda. La tua forza è quella di tutti noi, ma senza il mio lavoro, non ci sarebbe nulla da proteggere."
+          "text": "Capito, me ne vado."
         }
       ]
     },
     "end": {
-      "text": "Ricorda, minatore, la tua fatica non passa inosservata. Finché sarò qui, il nostro cammino sarà sicuro. Torniamo insieme, ognuno con il proprio compito.",
+      "text": "Torna al tuo cammino, dove battaglie e gloria ti attendono.",
       "type": "end_dialogue"
     }
   },
@@ -19,5 +19,5 @@
     "type": "blabber:rpg"
   },
   "unskippable": false,
-  "start_at": "respectful_remark"
+  "start_at": "wrong_guild_warning"
 }

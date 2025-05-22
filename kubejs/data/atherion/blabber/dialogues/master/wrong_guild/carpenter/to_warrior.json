@@ -1,17 +1,17 @@
 {
   "states": {
-    "wrong_guild_warning": {
-      "text": "Sho sho… questa non è la tua gilda, guerriero. Le tue mani impugnano la spada, non un arco, né frecce…",
+    "neutral_conversation": {
+      "text": "Guerriero, ho notato che la tua nuova armatura si adatta perfettamente. La struttura che ho costruito per te soddisfa le tue esigenze?",
       "type": "default",
       "choices": [
         {
-          "next": "end",
-          "text": "Capito, me ne vado."
+          "text": "Assolutamente, Carpentiere! Grazie alla tua maestria, la mia armatura è resistente e confortevole. È un piacere combattere con un equipaggiamento così ben fatto.",
+          "next": "end"
         }
       ]
     },
     "end": {
-      "text": "Torna al tuo cammino, dove battaglie e gloria ti attendono.",
+      "text": "Sono lieto che il mio lavoro contribuisca al tuo successo in battaglia. Continuiamo a collaborare per proteggere il nostro villaggio.",
       "type": "end_dialogue"
     }
   },
@@ -19,5 +19,5 @@
     "type": "blabber:rpg"
   },
   "unskippable": false,
-  "start_at": "wrong_guild_warning"
+  "start_at": "neutral_conversation"
 }

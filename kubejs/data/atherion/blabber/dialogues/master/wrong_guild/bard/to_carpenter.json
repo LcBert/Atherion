@@ -1,17 +1,17 @@
 {
   "states": {
-    "wrong_guild_warning": {
-      "text": "Sho sho… questa non è la tua gilda, guerriero. Le tue mani impugnano la spada, non un arco, né frecce…",
+    "neutral_conversation": {
+      "text": "Le tue canzoni, bardo, rendono più leggere le mie giornate di lavoro. Ogni colpo di martello sembra seguire il ritmo delle tue melodie.",
       "type": "default",
       "choices": [
         {
-          "next": "end",
-          "text": "Capito, me ne vado."
+          "text": "E le tue creazioni, carpentiere, sono la base su cui si costruiscono le nostre storie. Senza le tue strutture, le mie ballate non avrebbero palchi da calcare.",
+          "next": "end"
         }
       ]
     },
     "end": {
-      "text": "Torna al tuo cammino, dove battaglie e gloria ti attendono.",
+      "text": "Allora continuiamo a costruire insieme, ciascuno con la propria arte. Che le tue strutture e le mie canzoni rendano il nostro villaggio più armonioso.",
       "type": "end_dialogue"
     }
   },
@@ -19,5 +19,5 @@
     "type": "blabber:rpg"
   },
   "unskippable": false,
-  "start_at": "wrong_guild_warning"
+  "start_at": "neutral_conversation"
 }

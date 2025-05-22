@@ -1,17 +1,17 @@
 {
   "states": {
-    "neutral_greeting": {
-      "text": "Mh… legno e chiodi, non provette e pozioni. Sei un carpentiere, non uno studioso del mercurio.",
+    "neutral_conversation": {
+      "text": "Alchimista, i tuoi trattamenti hanno reso il legno più resistente alle intemperie. Le mie costruzioni dureranno per generazioni.",
       "type": "default",
       "choices": [
         {
-          "next": "end",
-          "text": "Hai ragione, continuo con i miei lavori."
+          "text": "Carpentiere, la tua abilità nel modellare il legno è senza pari. È un onore vedere le mie formule prendere forma nelle tue mani.",
+          "next": "end"
         }
       ]
     },
     "end": {
-      "text": "Fa' buon uso del tuo martello. Le formule si scrivono in laboratorio, ma anche i muri hanno bisogno di reggersi.",
+      "text": "Continuiamo a collaborare, allora. Insieme, possiamo creare strutture che sfidano il tempo e la natura.",
       "type": "end_dialogue"
     }
   },
@@ -19,5 +19,5 @@
     "type": "blabber:rpg"
   },
   "unskippable": false,
-  "start_at": "neutral_greeting"
+  "start_at": "neutral_conversation"
 }

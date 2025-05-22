@@ -1,17 +1,17 @@
 {
   "states": {
-    "neutral_remark": {
-      "text": "La tua melodia risuona tra le ampolle e fa ribollire i miei intrugli alchemici! Ma, in un certo senso, anche la musica è una forma di magia.",
+    "neutral_conversation": {
+      "text": "Le tue pozioni hanno salvato più di un mio compagno, alchimista. Senza di te, le nostre canzoni avrebbero avuto finali più tristi.",
       "type": "default",
       "choices": [
         {
-          "next": "end",
-          "text": "È vero, ogni arte ha la sua magia."
+          "text": "E le tue ballate hanno sollevato il morale anche nei momenti più bui. La tua musica è un balsamo per l'anima, tanto quanto le mie miscele lo sono per il corpo.",
+          "next": "end"
         }
       ]
     },
     "end": {
-      "text": "Che le tue note risuonino nell’aria, come le mie pozzioni nelle bottiglie. Ogni scienza ha il suo incanto.",
+      "text": "Allora continuiamo a intrecciare le nostre arti. Insieme, possiamo affrontare qualsiasi sfida.",
       "type": "end_dialogue"
     }
   },
@@ -19,5 +19,5 @@
     "type": "blabber:rpg"
   },
   "unskippable": false,
-  "start_at": "neutral_remark"
+  "start_at": "neutral_conversation"
 }

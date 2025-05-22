@@ -1,17 +1,17 @@
 {
   "states": {
-    "wrong_guild_warning": {
-      "text": "Sho sho… questa non è la tua gilda, guerriero. Le tue mani impugnano la spada, non un arco, né frecce…",
+    "neutral_conversation": {
+      "text": "Guerriero, ho notato che le tue pattuglie hanno tenuto lontani i predoni dai nostri campi. Potremmo coordinare meglio i nostri sforzi per proteggere il raccolto?",
       "type": "default",
       "choices": [
         {
-          "next": "end",
-          "text": "Capito, me ne vado."
+          "text": "Certamente, Capo Contadino. Posso assegnare alcune guardie durante le ore critiche del raccolto.",
+          "next": "end"
         }
       ]
     },
     "end": {
-      "text": "Torna al tuo cammino, dove battaglie e gloria ti attendono.",
+      "text": "Apprezzo la tua disponibilità. Insieme, garantiremo la sicurezza e la prosperità del villaggio.",
       "type": "end_dialogue"
     }
   },
@@ -19,5 +19,5 @@
     "type": "blabber:rpg"
   },
   "unskippable": false,
-  "start_at": "wrong_guild_warning"
+  "start_at": "neutral_conversation"
 }

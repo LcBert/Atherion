@@ -1,17 +1,17 @@
 {
   "states": {
-    "wrong_guild_warning": {
-      "text": "Sho sho… questa non è la tua gilda, guerriero. Le tue mani impugnano la spada, non un arco, né frecce…",
+    "neutral_conversation": {
+      "text": "Le tue pietanze hanno il potere di risvegliare i sensi e l'anima. Dopo un tuo pasto, le mie canzoni trovano nuova vita.",
       "type": "default",
       "choices": [
         {
-          "next": "end",
-          "text": "Capito, me ne vado."
+          "text": "E le tue melodie rendono ogni banchetto un'esperienza indimenticabile. Insieme, trasformiamo una semplice cena in una festa per il cuore.",
+          "next": "end"
         }
       ]
     },
     "end": {
-      "text": "Torna al tuo cammino, dove battaglie e gloria ti attendono.",
+      "text": "Allora continuiamo a deliziare il villaggio con le nostre arti. Che ogni piatto sia accompagnato da una canzone, e ogni canzone da un sapore unico.",
       "type": "end_dialogue"
     }
   },
@@ -19,5 +19,5 @@
     "type": "blabber:rpg"
   },
   "unskippable": false,
-  "start_at": "wrong_guild_warning"
+  "start_at": "neutral_conversation"
 }

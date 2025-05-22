@@ -1,17 +1,17 @@
 {
   "states": {
-    "wrong_guild_warning": {
-      "text": "Sho sho… questa non è la tua gilda, guerriero. Le tue mani impugnano la spada, non un arco, né frecce…",
+    "neutral_conversation": {
+      "text": "Fabbro, i tuoi attrezzi hanno reso il mio lavoro nei campi più efficiente. La tua abilità nel forgiare è davvero ammirevole.",
       "type": "default",
       "choices": [
         {
-          "next": "end",
-          "text": "Capito, me ne vado."
+          "text": "Contadino, il tuo impegno nel coltivare la terra è fondamentale per la nostra comunità. Senza il tuo raccolto, le nostre tavole sarebbero vuote.",
+          "next": "end"
         }
       ]
     },
     "end": {
-      "text": "Torna al tuo cammino, dove battaglie e gloria ti attendono.",
+      "text": "Continuiamo a collaborare, allora. I tuoi attrezzi e la mia terra insieme nutrono il villaggio.",
       "type": "end_dialogue"
     }
   },
@@ -19,5 +19,5 @@
     "type": "blabber:rpg"
   },
   "unskippable": false,
-  "start_at": "wrong_guild_warning"
+  "start_at": "neutral_conversation"
 }

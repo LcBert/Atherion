@@ -1,17 +1,17 @@
 {
   "states": {
-    "wrong_guild_warning": {
-      "text": "Sho sho… questa non è la tua gilda, guerriero. Le tue mani impugnano la spada, non un arco, né frecce…",
+    "neutral_conversation": {
+      "text": "Fabbro, le tue lame brillano come le gemme che estraggo dalle profondità. La tua abilità nel forgiare è davvero ammirevole.",
       "type": "default",
       "choices": [
         {
-          "next": "end",
-          "text": "Capito, me ne vado."
+          "text": "Minatore, senza i tuoi minerali, le mie creazioni non avrebbero vita. La tua dedizione nel fornirmi i materiali migliori è inestimabile.",
+          "next": "end"
         }
       ]
     },
     "end": {
-      "text": "Torna al tuo cammino, dove battaglie e gloria ti attendono.",
+      "text": "Continuiamo a collaborare, allora. Le tue mani scavano, le mie forgiano. Insieme, costruiamo la forza del nostro regno.",
       "type": "end_dialogue"
     }
   },
@@ -19,5 +19,5 @@
     "type": "blabber:rpg"
   },
   "unskippable": false,
-  "start_at": "wrong_guild_warning"
+  "start_at": "neutral_conversation"
 }

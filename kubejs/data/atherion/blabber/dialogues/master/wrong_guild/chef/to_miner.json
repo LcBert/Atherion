@@ -1,17 +1,17 @@
 {
   "states": {
-    "wrong_guild_warning": {
-      "text": "Sho sho… questa non è la tua gilda, guerriero. Le tue mani impugnano la spada, non un arco, né frecce…",
+    "neutral_conversation": {
+      "text": "Minatore, ho sentito che hai trovato un nuovo tipo di sale nelle profondità della miniera. Potrebbe aggiungere un sapore unico ai miei piatti. Potresti fornirmene un po'?",
       "type": "default",
       "choices": [
         {
-          "next": "end",
-          "text": "Capito, me ne vado."
+          "text": "Capo Cuoco, certo! Ho appena estratto del sale rosa dalle caverne. Te ne porterò un campione domani.",
+          "next": "end"
         }
       ]
     },
     "end": {
-      "text": "Torna al tuo cammino, dove battaglie e gloria ti attendono.",
+      "text": "Perfetto! Non vedo l'ora di sperimentare nuove ricette con questo ingrediente speciale. La tua scoperta potrebbe rivoluzionare la nostra cucina.",
       "type": "end_dialogue"
     }
   },
@@ -19,5 +19,5 @@
     "type": "blabber:rpg"
   },
   "unskippable": false,
-  "start_at": "wrong_guild_warning"
+  "start_at": "neutral_conversation"
 }

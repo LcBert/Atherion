@@ -1,17 +1,17 @@
 {
   "states": {
-    "neutral_remark": {
-      "text": "Saluti Minatore. Scavi nelle viscere della terra, mentre io ne estraggo l’essenza. Mestieri diversi, stessa fatica.",
+    "wrong_guild_warning": {
+      "text": "Sho sho… questa non è la tua gilda, guerriero. Le tue mani impugnano la spada, non un arco, né frecce…",
       "type": "default",
       "choices": [
         {
           "next": "end",
-          "text": "Ognuno conosce la sua polvere, direi."
+          "text": "Capito, me ne vado."
         }
       ]
     },
     "end": {
-      "text": "Che la tua lanterna non si spenga mai nelle profondità. La materia grezza ha valore, se mani sapienti la lavorano.",
+      "text": "Torna al tuo cammino, dove battaglie e gloria ti attendono.",
       "type": "end_dialogue"
     }
   },
@@ -19,5 +19,5 @@
     "type": "blabber:rpg"
   },
   "unskippable": false,
-  "start_at": "neutral_remark"
+  "start_at": "wrong_guild_warning"
 }

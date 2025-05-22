@@ -1,17 +1,17 @@
 {
   "states": {
     "neutral_conversation": {
-      "text": "Ah, un fattore. Le tue terre sono vastissime, ma non credo che tu possa comprendere davvero cosa significhi muoversi silenziosamente tra le ombre della foresta. Ogni giorno in cui cammino nella natura, imparo qualcosa di nuovo, mentre tu, immagino, studi la terra e le sue stagioni.",
+      "text": "Arciere, ho notato che le tue frecce spesso finiscono nei nostri campi. Potremmo trovare un modo per evitare danni ai raccolti?",
       "type": "default",
       "choices": [
         {
-          "next": "end",
-          "text": " ognuno con il proprio compito. Continuiamo a fare ciò che dobbiamo fare, senza intrometterci troppo nelle vite degli altri."
+          "text": "Capo Contadino, mi scuso per i disagi. Posso addestrarmi in un'area più lontana dai campi.",
+          "next": "end"
         }
       ]
     },
     "end": {
-      "text": "Nel nostro mondo, ci sono tanti lavori, e non tutti si incrociano. Tu lavori la terra, io lavoro nella foresta. Ma c'è rispetto, e questo basta. Buona fortuna nelle tue campagne.",
+      "text": "Apprezzo la tua comprensione. Collaborando, possiamo mantenere sia i raccolti che le tue abilità in ottima forma.",
       "type": "end_dialogue"
     }
   },

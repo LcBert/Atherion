@@ -1,17 +1,17 @@
 {
   "states": {
-    "respectful_remark": {
-      "text": "Ho sempre ammirato il tuo lavoro, fabbro. Non c'è nulla di più prezioso di un'arma ben forgiata, e tu sei il maestro di questo. Senza di te, le nostre battaglie sarebbero senza speranza.",
+    "neutral_conversation": {
+      "text": "Fabbro, le tue punte di freccia sono impeccabili. Hanno attraversato l'armatura del bersaglio come burro.",
       "type": "default",
       "choices": [
         {
-          "next": "end",
-          "text": "Apprezzo le tue parole. Siamo tutti legati dal nostro mestiere."
+          "text": "Arcere, la tua mira dà vita alle mie creazioni. Senza la tua precisione, le mie punte sarebbero solo pezzi di metallo.",
+          "next": "end"
         }
       ]
     },
     "end": {
-      "text": "Che le tue mani continuino a forgiare con la stessa passione, fabbro. La nostra lotta è anche tua, per quanto il ferro risuoni sotto il tuo martello.",
+      "text": "Allora continuiamo a collaborare. Le tue mani forgiano, le mie mani colpiscono. Insieme, siamo una forza inarrestabile.",
       "type": "end_dialogue"
     }
   },
@@ -19,5 +19,5 @@
     "type": "blabber:rpg"
   },
   "unskippable": false,
-  "start_at": "respectful_remark"
+  "start_at": "neutral_conversation"
 }

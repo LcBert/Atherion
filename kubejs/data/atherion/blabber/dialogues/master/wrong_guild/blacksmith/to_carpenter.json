@@ -1,17 +1,17 @@
 {
   "states": {
-    "wrong_guild_warning": {
-      "text": "Sho sho… questa non è la tua gilda, guerriero. Le tue mani impugnano la spada, non un arco, né frecce…",
+    "neutral_conversation": {
+      "text": "Fabbro, le tue cerniere e chiodi hanno reso la mia ultima costruzione solida come una roccia. Il tuo lavoro è sempre impeccabile.",
       "type": "default",
       "choices": [
         {
-          "next": "end",
-          "text": "Capito, me ne vado."
+          "text": "Carpentiere, senza le tue strutture ben progettate, i miei metalli non avrebbero uno scopo. Il tuo occhio per i dettagli è invidiabile.",
+          "next": "end"
         }
       ]
     },
     "end": {
-      "text": "Torna al tuo cammino, dove battaglie e gloria ti attendono.",
+      "text": "Continuiamo a collaborare, allora. Legno e metallo insieme possono creare meraviglie che dureranno nei secoli.",
       "type": "end_dialogue"
     }
   },
@@ -19,5 +19,5 @@
     "type": "blabber:rpg"
   },
   "unskippable": false,
-  "start_at": "wrong_guild_warning"
+  "start_at": "neutral_conversation"
 }

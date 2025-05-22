@@ -1,17 +1,17 @@
 {
   "states": {
-    "wrong_guild_warning": {
-      "text": "Sho sho… questa non è la tua gilda, guerriero. Le tue mani impugnano la spada, non un arco, né frecce…",
+    "neutral_conversation": {
+      "text": "Carpentiere, ho notato che le nuove mensole che hai installato nella dispensa sono robuste e ben fatte. Hanno reso l'organizzazione degli ingredienti molto più efficiente. Ti ringrazio per il tuo eccellente lavoro.",
       "type": "default",
       "choices": [
         {
-          "next": "end",
-          "text": "Capito, me ne vado."
+          "text": "Capo Cuoco, è un piacere sapere che il mio lavoro ha migliorato la tua cucina. Se hai bisogno di ulteriori modifiche o aggiustamenti, non esitare a chiedere.",
+          "next": "end"
         }
       ]
     },
     "end": {
-      "text": "Torna al tuo cammino, dove battaglie e gloria ti attendono.",
+      "text": "Apprezzo la tua disponibilità, Carpentiere. La tua maestria nel legno è fondamentale per il buon funzionamento della cucina. Continuiamo a collaborare per servire al meglio il nostro villaggio.",
       "type": "end_dialogue"
     }
   },
@@ -19,5 +19,5 @@
     "type": "blabber:rpg"
   },
   "unskippable": false,
-  "start_at": "wrong_guild_warning"
+  "start_at": "neutral_conversation"
 }
