@@ -1,17 +1,17 @@
 {
   "states": {
-    "wrong_guild_warning": {
-      "text": "Sho sho… questa non è la tua gilda, guerriero. Le tue mani impugnano la spada, non un arco, né frecce…",
+    "respectful_remark": {
+      "text": "Ho sempre ammirato il tuo lavoro, fabbro. Non c'è nulla di più prezioso di un'arma ben forgiata, e tu sei il maestro di questo. Senza di te, le nostre battaglie sarebbero senza speranza.",
       "type": "default",
       "choices": [
         {
           "next": "end",
-          "text": "Capito, me ne vado."
+          "text": "Apprezzo le tue parole. Siamo tutti legati dal nostro mestiere."
         }
       ]
     },
     "end": {
-      "text": "Torna al tuo cammino, dove battaglie e gloria ti attendono.",
+      "text": "Che le tue mani continuino a forgiare con la stessa passione, fabbro. La nostra lotta è anche tua, per quanto il ferro risuoni sotto il tuo martello.",
       "type": "end_dialogue"
     }
   },
@@ -19,5 +19,5 @@
     "type": "blabber:rpg"
   },
   "unskippable": false,
-  "start_at": "wrong_guild_warning"
+  "start_at": "respectful_remark"
 }
