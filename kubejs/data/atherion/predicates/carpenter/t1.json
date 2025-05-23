@@ -1,0 +1,19 @@
+{
+    "condition": "minecraft:all_of",
+    "terms": [
+        {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+                "nbt": "{cardinal_components:{\"origins:origin\":{OriginLayers:[{Origin:\"origins:class/carpenter\"}]}}}"
+            }
+        },
+        {
+            "condition": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
+                "level": 1
+            }
+        }
+    ]
+}
