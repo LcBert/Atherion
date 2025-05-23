@@ -227,7 +227,8 @@
     "origins:class/warrior": {
       "enabled": true,
       "origins:class/warrior": true,
-      "origins:kit/warrior": true
+      "origins:kit/warrior": true,
+      "origins:test": true
     },
     "origins:race/dragonoid": {
       "enabled": true,
@@ -273,6 +274,12 @@
       "enabled": true
     },
     "origins:class/alchemist": {
+      "enabled": true
+    },
+    "origins:class/common": {
+      "enabled": true
+    },
+    "origins:class/shadow": {
       "enabled": true
     }
   }

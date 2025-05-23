@@ -1,7 +1,19 @@
 {
-    "condition": "minecraft:entity_properties",
-    "entity": "this",
-    "predicate": {
-        "nbt": "{KubeJSPersistentData:{atherion_class_type:\"warrior\",atherion_class_level:0}}"
-    }
+    "condition": "minecraft:all_of",
+    "terms": [
+        {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+                "nbt": "{cardinal_components:{\"origins:origin\":{OriginLayers:[{Origin:\"origins:class/warrior\"}]}}}"
+            }
+        },
+        {
+            "condition": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
+                "level": 0
+            }
+        }
+    ]
 }

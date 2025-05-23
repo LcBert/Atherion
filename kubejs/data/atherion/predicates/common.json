@@ -2,6 +2,6 @@
     "condition": "minecraft:entity_properties",
     "entity": "this",
     "predicate": {
-        "nbt": "{KubeJSPersistentData:{atherion_class_type:\"common\",atherion_class_level:-1.0d}}"
+        "nbt": "{cardinal_components:{\"origins:origin\":{OriginLayers:[{Origin:\"origins:class/common\"}]}}}"
     }
 }

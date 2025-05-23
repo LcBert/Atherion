@@ -1,9 +1,9 @@
 {
     "powers": [
-        "origins:kit/warrior"
+        "origins:kit/shadow"
     ],
     "icon": {
-        "item": "minecraft:stone_stiletto"
+        "item": "magistuarmory:stone_stylet"
     },
     "order": 1,
     "impact": 1

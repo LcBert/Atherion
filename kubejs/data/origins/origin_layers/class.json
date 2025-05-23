@@ -2,19 +2,21 @@
     "replace": false,
     "enabled": true,
     "origins": [
-        "origins:class/warrior",
-        "origins:class/archer",
-        "origins:class/mage",
-        "origins:class/shadow",
-        "origins:class/bard",
-        "origins:class/blacksmith",
+        "origins:class/common",
         "origins:class/alchemist",
+        "origins:class/archer",
+        "origins:class/bard",
+        "origins:class/carpenter",
+        "origins:class/blacksmith",
         "origins:class/chef",
         "origins:class/farmer",
+        "origins:class/mage",
         "origins:class/miner",
-        "origins:class/carpenter"
+        "origins:class/shadow",
+        "origins:class/warrior"
     ],
     "allow_random": false,
     "exclude_random": [],
-    "allow_random_unchoosable": false
+    "allow_random_unchoosable": false,
+    "hidden": false
 }
