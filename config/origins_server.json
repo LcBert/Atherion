@@ -1,6 +1,12 @@
 {
   "performVersionCheck": true,
   "origins": {
+    "origins:class/carpenter": {
+      "enabled": true
+    },
+    "origins:class/mage": {
+      "enabled": true
+    },
     "origins:enderian": {
       "enabled": false,
       "origins:throw_ender_pearl": true,
@@ -10,8 +16,8 @@
       "origins:ender_particles": true,
       "origins:damage_from_potions": true
     },
-    "origins:human": {
-      "enabled": false
+    "origins:class/bard": {
+      "enabled": true
     },
     "origins:feline": {
       "enabled": false,
@@ -32,26 +38,6 @@
       "origins:claustrophobia": true,
       "origins:more_kinetic_damage": true
     },
-    "origins:shulk": {
-      "enabled": false,
-      "origins:shulker_inventory": true,
-      "origins:natural_armor": true,
-      "origins:strong_arms": true,
-      "origins:strong_arms_break_speed": true,
-      "origins:no_shield": true,
-      "origins:more_exhaustion": true
-    },
-    "origins:merling": {
-      "enabled": false,
-      "origins:water_breathing": true,
-      "origins:water_vision": true,
-      "origins:aqua_affinity": true,
-      "origins:swim_speed": true,
-      "origins:like_water": true,
-      "origins:aquatic": true,
-      "origins:conduit_power_on_land": true,
-      "origins:air_from_potions": true
-    },
     "origins:phantom": {
       "enabled": false,
       "origins:phantomize": true,
@@ -62,6 +48,10 @@
       "origins:hunger_over_time": true,
       "origins:fragile": true,
       "origins:phantomize_overlay": true
+    },
+    "origins:race/normal": {
+      "enabled": true,
+      "origins:race/normal_scale": true
     },
     "classes:paladino": {
       "enabled": false,
@@ -87,14 +77,6 @@
       "classes:warrior/weapons_knolage": true,
       "classes:magic_debuff": true
     },
-    "origins:arachnid": {
-      "enabled": false,
-      "origins:climbing": true,
-      "origins:master_of_webs": true,
-      "origins:carnivore": true,
-      "origins:fragile": true,
-      "origins:arthropod": true
-    },
     "origins:blazeborn": {
       "enabled": false,
       "origins:fire_immunity": true,
@@ -115,6 +97,62 @@
       "origins:lay_eggs": true,
       "origins:vegetarian": true
     },
+    "origins:class/archer": {
+      "enabled": true
+    },
+    "origins:class/farmer": {
+      "enabled": true
+    },
+    "origins:race/dwarf": {
+      "enabled": true,
+      "origins:race/dwarf_scale": true
+    },
+    "origins:human": {
+      "enabled": false
+    },
+    "origins:class/chef": {
+      "enabled": true
+    },
+    "origins:class/common": {
+      "enabled": true,
+      "origins:test": true
+    },
+    "origins:class/shadow": {
+      "enabled": true
+    },
+    "origins:shulk": {
+      "enabled": false,
+      "origins:shulker_inventory": true,
+      "origins:natural_armor": true,
+      "origins:strong_arms": true,
+      "origins:strong_arms_break_speed": true,
+      "origins:no_shield": true,
+      "origins:more_exhaustion": true
+    },
+    "origins:class/warrior": {
+      "enabled": true,
+      "origins:class/warrior": true,
+      "origins:kit/warrior": true
+    },
+    "origins:merling": {
+      "enabled": false,
+      "origins:water_breathing": true,
+      "origins:water_vision": true,
+      "origins:aqua_affinity": true,
+      "origins:swim_speed": true,
+      "origins:like_water": true,
+      "origins:aquatic": true,
+      "origins:conduit_power_on_land": true,
+      "origins:air_from_potions": true
+    },
+    "origins:arachnid": {
+      "enabled": false,
+      "origins:climbing": true,
+      "origins:master_of_webs": true,
+      "origins:carnivore": true,
+      "origins:fragile": true,
+      "origins:arthropod": true
+    },
     "classes:rogue": {
       "enabled": false,
       "classes:rogue/itens": true,
@@ -134,6 +172,9 @@
       "classes:magic_debuff": true,
       "classes:arrow_debuff": true
     },
+    "origins:class/alchemist": {
+      "enabled": true
+    },
     "classes:hunter": {
       "enabled": false,
       "classes:hunter/itens": true,
@@ -152,135 +193,25 @@
       "classes:magic_debuff": true,
       "classes:arrow_debuff": true
     },
-    "origins:normal": {
-      "enabled": true,
-      "origins:normal_scale": true
-    },
-    "origins:giant": {
-      "enabled": true,
-      "origins:giant_scale": true
-    },
-    "origins:dwarf": {
-      "enabled": true,
-      "origins:dwarf_power": true,
-      "origins:dwarf_speed": true,
-      "origins:dwarf_scale": true
-    },
-    "extraorigins:floran": {
-      "enabled": true,
-      "extraorigins:green_thumb": true,
-      "extraorigins:photosynthesis": true,
-      "extraorigins:absorbing": true,
-      "extraorigins:flammable": true,
-      "extraorigins:nectarivore": true
-    },
-    "extraorigins:piglin": {
-      "enabled": true,
-      "extraorigins:all_that_glitters": true,
-      "extraorigins:crossbow_master": true,
-      "extraorigins:piglin_neutrality": true,
-      "origins:nether_spawn": true,
-      "extraorigins:homesick": true,
-      "extraorigins:golden_gluttony": true,
-      "extraorigins:flabby": true,
-      "extraorigins:soul_spooked": true
-    },
-    "extraorigins:inchling": {
-      "enabled": true,
-      "extraorigins:bite_sized": true,
-      "extraorigins:nimble": true,
-      "extraorigins:small_appetite": true,
-      "origins:climbing": true,
-      "extraorigins:jockey": true
-    },
-    "extraorigins:truffle": {
-      "enabled": true,
-      "extraorigins:magic_spores": true,
-      "extraorigins:infestation": true,
-      "extraorigins:rooted": true,
-      "extraorigins:decomposition": true
-    },
-    "origins:elf": {
-      "enabled": true,
-      "origins:dwarf_scale": true,
-      "origins:elf_scale": true
-    },
-    "origins:orc": {
-      "enabled": true,
-      "origins:orc_scale": true
-    },
-    "origins:dragonoid": {
-      "enabled": true,
-      "origins:dwarf_scale": true,
-      "origins:dragonoid_scale": true
-    },
-    "origins:race/normal": {
-      "enabled": true,
-      "origins:race/normal_scale": true,
-      "origins:kit/common": true
-    },
-    "origins:race/dwarf": {
-      "enabled": true,
-      "origins:race/dwarf_scale": true,
-      "origins:kit/common": true
-    },
-    "origins:class/warrior": {
-      "enabled": true,
-      "origins:class/warrior": true,
-      "origins:kit/warrior": true,
-      "origins:test": true
-    },
     "origins:race/dragonoid": {
       "enabled": true,
-      "origins:race/dragonoid_scale": true,
-      "origins:kit/common": true
-    },
-    "origins:race/elf": {
-      "enabled": true,
-      "origins:race/elf_scale": true,
-      "origins:kit/common": true
-    },
-    "origins:race/orc": {
-      "enabled": true,
-      "origins:race/orc_scale": true,
-      "origins:kit/common": true
-    },
-    "origins:class/carpenter": {
-      "enabled": true
-    },
-    "origins:class/mage": {
-      "enabled": true
-    },
-    "origins:class/bard": {
-      "enabled": true
-    },
-    "origins:class/archer": {
-      "enabled": true
-    },
-    "origins:class/farmer": {
-      "enabled": true
-    },
-    "origins:class/alchimist": {
-      "enabled": true
-    },
-    "origins:class/chef": {
-      "enabled": true
+      "origins:race/dragonoid_scale": true
     },
     "origins:class/miner": {
       "enabled": true,
       "origins:kit/miner": true
     },
     "origins:class/blacksmith": {
-      "enabled": true
+      "enabled": true,
+      "origins:test": true
     },
-    "origins:class/alchemist": {
-      "enabled": true
+    "origins:race/elf": {
+      "enabled": true,
+      "origins:race/elf_scale": true
     },
-    "origins:class/common": {
-      "enabled": true
-    },
-    "origins:class/shadow": {
-      "enabled": true
+    "origins:race/orc": {
+      "enabled": true,
+      "origins:race/orc_scale": true
     }
   }
 }
