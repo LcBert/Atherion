@@ -1,17 +1,17 @@
 {
   "states": {
-    "neutral_remark": {
-      "text": "Occhio attento e mano ferma… ma non sei qui per distillare essenze. Le tue frecce volano, le mie miscele esplodono. Strade diverse, stessa precisione.",
+    "neutral_conversation": {
+      "text": "Un alchimista, eh? La tua arte non è quella della caccia, ma la conoscenza che possiedi potrebbe essere utile. So che le tue pozioni e infusi possono avere poteri inaspettati, ma non è un mondo facile per chi vive nel buio delle foreste.",
       "type": "default",
       "choices": [
         {
           "next": "end",
-          "text": "Giusto. Torno al mio bersaglio."
+          "text": "La mia arte è diversa, ma i tuoi cacciatori fanno il loro dovere. Ciò che facciamo entrambi è necessario per il bene di tutti."
         }
       ]
     },
     "end": {
-      "text": "Che il vento segua sempre il volo delle tue frecce. La scienza, come l’arco, richiede pazienza.",
+      "text": "Non siamo nemici, e nemmeno alleati stretti. Ma c'è rispetto tra noi, anche se le strade che percorriamo sono diverse. Continua a fare ciò che sai fare.",
       "type": "end_dialogue"
     }
   },
@@ -19,5 +19,5 @@
     "type": "blabber:rpg"
   },
   "unskippable": false,
-  "start_at": "neutral_remark"
+  "start_at": "neutral_conversation"
 }

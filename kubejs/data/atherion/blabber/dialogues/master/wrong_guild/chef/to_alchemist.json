@@ -1,17 +1,17 @@
 {
   "states": {
-    "respectful_greeting": {
-      "text": "Saluti, custode dei sapori. Le tue mani plasmano piatti come formule: con precisione e intuito. Non sei un alchimista, ma il tuo mestiere non è meno nobile.",
+    "neutral_conversation": {
+      "text": "Alchimista, ho notato che le tue nuove pozioni stanno avendo un grande successo tra i nostri avventurieri. Hai pensato di collaborare con me per creare piatti che potenzino gli effetti delle tue creazioni?",
       "type": "default",
       "choices": [
         {
-          "next": "end",
-          "text": "Ti ringrazio, maestro. Torno ai miei fornelli."
+          "text": "Capo Cuoco, sarebbe un onore unire le nostre arti. Immagina un pasto che non solo sazia, ma amplifica le capacità di chi lo consuma.",
+          "next": "end"
         }
       ]
     },
     "end": {
-      "text": "Che i tuoi piatti nutrano corpo e spirito. Le nostre arti, diverse, servono la stessa armonia.",
+      "text": "Perfetto! Iniziamo a sperimentare insieme. La fusione tra cucina e alchimia potrebbe rivoluzionare il modo in cui supportiamo i nostri compagni.",
       "type": "end_dialogue"
     }
   },
@@ -19,5 +19,5 @@
     "type": "blabber:rpg"
   },
   "unskippable": false,
-  "start_at": "respectful_greeting"
+  "start_at": "neutral_conversation"
 }

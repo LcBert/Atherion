@@ -1,17 +1,17 @@
 {
   "states": {
-    "wrong_guild_warning": {
-      "text": "Sho sho… questa non è la tua gilda, guerriero. Le tue mani impugnano la spada, non un arco, né frecce…",
+    "neutral_conversation": {
+      "text": "Fabbro, ho bisogno di un'arma che possa canalizzare le mie energie magiche senza disperderle. Puoi aiutarmi?",
       "type": "default",
       "choices": [
         {
-          "next": "end",
-          "text": "Capito, me ne vado."
+          "text": "Mago, posso forgiare una lama con un nucleo di mithril e incastonare rune che amplifichino il flusso magico. Ma avrai bisogno di un catalizzatore per stabilizzarla.",
+          "next": "end"
         }
       ]
     },
     "end": {
-      "text": "Torna al tuo cammino, dove battaglie e gloria ti attendono.",
+      "text": "Perfetto. Fornirò un cristallo arcano come catalizzatore. Insieme, creeremo un'arma degna delle leggende.",
       "type": "end_dialogue"
     }
   },
@@ -19,5 +19,5 @@
     "type": "blabber:rpg"
   },
   "unskippable": false,
-  "start_at": "wrong_guild_warning"
+  "start_at": "neutral_conversation"
 }

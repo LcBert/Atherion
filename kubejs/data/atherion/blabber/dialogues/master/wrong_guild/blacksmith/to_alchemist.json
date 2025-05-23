@@ -1,17 +1,17 @@
 {
   "states": {
-    "hostile_remark": {
-      "text": "Un fabbro... più utile per colpire il ferro che per capire l'alchimia. I tuoi colpi non forgeranno mai l'arte che si nasconde nelle reazioni chimiche. La tua fucina non è altro che un gioco di forza, non di intelletto.",
+    "neutral_conversation": {
+      "text": "Fabbro, ho bisogno di un contenitore resistente al calore per le mie pozioni. Le tue creazioni possono sopportare le temperature dei miei esperimenti?",
       "type": "default",
       "choices": [
         {
-          "next": "end",
-          "text": "Forse, ma almeno io so come plasmare qualcosa di solido, non come imbottigliare aria."
+          "text": "Sei sempre a cercare soluzioni rapide con le tue pozioni instabili. Le mie creazioni sono fatte per durare, non per contenere i tuoi intrugli volatili.",
+          "next": "end"
         }
       ]
     },
     "end": {
-      "text": "Torna a battere il ferro, fabbro. Non c'è posto per la tua brutale semplicità nel mio mondo.",
+      "text": "Le mie 'pozioni instabili' hanno salvato più vite di quante le tue lame abbiano mai protetto. Ma non preoccuparti, troverò qualcuno con una mente più aperta.",
       "type": "end_dialogue"
     }
   },
@@ -19,5 +19,5 @@
     "type": "blabber:rpg"
   },
   "unskippable": false,
-  "start_at": "hostile_remark"
+  "start_at": "neutral_conversation"
 }

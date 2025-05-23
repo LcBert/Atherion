@@ -1,17 +1,17 @@
 {
   "states": {
-    "wrong_guild_warning": {
-      "text": "Sho sho… questa non è la tua gilda, guerriero. Le tue mani impugnano la spada, non un arco, né frecce…",
+    "neutral_conversation": {
+      "text": "Fabbro, ho notato che le tue fornaci emettono fumi che contaminano l'aria vicino alla cucina. Questo influisce sulla qualità dei miei piatti.",
       "type": "default",
       "choices": [
         {
-          "next": "end",
-          "text": "Capito, me ne vado."
+          "text": "Capo Cuoco, le mie fornaci sono essenziali per il mio lavoro. Non posso compromettere la qualità delle mie creazioni per il tuo arrosto.",
+          "next": "end"
         }
       ]
     },
     "end": {
-      "text": "Torna al tuo cammino, dove battaglie e gloria ti attendono.",
+      "text": "Capisco l'importanza del tuo lavoro, ma dobbiamo trovare una soluzione. Forse potremmo discutere con il consiglio del villaggio per trovare un compromesso.",
       "type": "end_dialogue"
     }
   },
@@ -19,5 +19,5 @@
     "type": "blabber:rpg"
   },
   "unskippable": false,
-  "start_at": "wrong_guild_warning"
+  "start_at": "neutral_conversation"
 }

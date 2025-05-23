@@ -1,17 +1,17 @@
 {
   "states": {
-    "respectful_remark": {
-      "text": "Anche se i tuoi metodi non sono sempre chiari, so che ogni informazione che raccogli è vitale. La tua ombra è più potente di mille spade in certe situazioni. Nonostante le differenze tra noi, rispetto il tuo talento nell'arte dell'invisibilità e della precisione.",
+    "wrong_guild_warning": {
+      "text": "Sho sho… questa non è la tua gilda, guerriero. Le tue mani impugnano la spada, non un arco, né frecce…",
       "type": "default",
       "choices": [
         {
           "next": "end",
-          "text": "Il rispetto reciproco è fondamentale, cacciatore. Siamo due facce della stessa moneta, ognuno con il suo ruolo da svolgere."
+          "text": "Capito, me ne vado."
         }
       ]
     },
     "end": {
-      "text": "Continua a muoverti nell'ombra con la stessa astuzia. La nostra missione potrebbe non essere sempre visibile, ma il nostro lavoro è altrettanto importante.",
+      "text": "Torna al tuo cammino, dove battaglie e gloria ti attendono.",
       "type": "end_dialogue"
     }
   },
@@ -19,5 +19,5 @@
     "type": "blabber:rpg"
   },
   "unskippable": false,
-  "start_at": "respectful_remark"
+  "start_at": "wrong_guild_warning"
 }

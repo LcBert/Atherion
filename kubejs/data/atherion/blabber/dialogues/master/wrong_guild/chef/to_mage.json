@@ -1,17 +1,17 @@
 {
   "states": {
-    "wrong_guild_warning": {
-      "text": "Sho sho… questa non è la tua gilda, guerriero. Le tue mani impugnano la spada, non un arco, né frecce…",
+    "neutral_conversation": {
+      "text": "Mago, le tue infusioni magiche hanno dato un tocco unico ai nostri piatti. Hai qualche nuova incantazione che potremmo integrare nelle nostre ricette?",
       "type": "default",
       "choices": [
         {
-          "next": "end",
-          "text": "Capito, me ne vado."
+          "text": "Capo Cuoco, ho recentemente perfezionato un incantesimo che esalta i sapori naturali degli ingredienti. Potrebbe essere l'aggiunta perfetta ai tuoi piatti.",
+          "next": "end"
         }
       ]
     },
     "end": {
-      "text": "Torna al tuo cammino, dove battaglie e gloria ti attendono.",
+      "text": "Meraviglioso! La fusione tra magia e cucina continua a sorprendere i nostri ospiti. Non vedo l'ora di sperimentare con la tua nuova incantazione.",
       "type": "end_dialogue"
     }
   },
@@ -19,5 +19,5 @@
     "type": "blabber:rpg"
   },
   "unskippable": false,
-  "start_at": "wrong_guild_warning"
+  "start_at": "neutral_conversation"
 }

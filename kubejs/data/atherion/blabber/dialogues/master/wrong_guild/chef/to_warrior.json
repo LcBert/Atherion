@@ -1,17 +1,17 @@
 {
   "states": {
-    "wrong_guild_warning": {
-      "text": "Sho sho… questa non è la tua gilda, guerriero. Le tue mani impugnano la spada, non un arco, né frecce…",
+    "neutral_conversation": {
+      "text": "Guerriero, ho notato che spesso trascuri i pasti che preparo per te e il resto della compagnia. La nutrizione è fondamentale per mantenere la forza e la resistenza.",
       "type": "default",
       "choices": [
         {
-          "next": "end",
-          "text": "Capito, me ne vado."
+          "text": "Capo Cuoco, apprezzo il tuo impegno, ma in battaglia non c'è tempo per pasti elaborati. Ho bisogno di qualcosa di rapido e sostanzioso.",
+          "next": "end"
         }
       ]
     },
     "end": {
-      "text": "Torna al tuo cammino, dove battaglie e gloria ti attendono.",
+      "text": "Capisco le tue esigenze, ma la qualità del cibo non dovrebbe essere sacrificata. Forse possiamo trovare un compromesso che soddisfi entrambi.",
       "type": "end_dialogue"
     }
   },
@@ -19,5 +19,5 @@
     "type": "blabber:rpg"
   },
   "unskippable": false,
-  "start_at": "wrong_guild_warning"
+  "start_at": "neutral_conversation"
 }

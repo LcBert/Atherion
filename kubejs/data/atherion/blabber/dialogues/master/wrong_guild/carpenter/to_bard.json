@@ -1,17 +1,17 @@
 {
   "states": {
-    "wrong_guild_warning": {
-      "text": "Sho sho… questa non è la tua gilda, guerriero. Le tue mani impugnano la spada, non un arco, né frecce…",
+    "neutral_conversation": {
+      "text": "Bardo, ho sentito che hai trasformato la mia officina in un palcoscenico per le tue esibizioni. Non ti sembra di aver oltrepassato il limite?",
       "type": "default",
       "choices": [
         {
-          "next": "end",
-          "text": "Capito, me ne vado."
+          "text": "Carpentiere, la tua officina era il luogo perfetto per ispirare le mie ballate. Non capisco perché tu sia così contrariato.",
+          "next": "end"
         }
       ]
     },
     "end": {
-      "text": "Torna al tuo cammino, dove battaglie e gloria ti attendono.",
+      "text": "La mia officina è un luogo di lavoro, non un teatro. La prossima volta, chiedi il permesso prima di invadere il mio spazio.",
       "type": "end_dialogue"
     }
   },
@@ -19,5 +19,5 @@
     "type": "blabber:rpg"
   },
   "unskippable": false,
-  "start_at": "wrong_guild_warning"
+  "start_at": "neutral_conversation"
 }

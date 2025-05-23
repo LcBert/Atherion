@@ -1,17 +1,17 @@
 {
   "states": {
-    "wrong_guild_warning": {
-      "text": "Sho sho… questa non è la tua gilda, guerriero. Le tue mani impugnano la spada, non un arco, né frecce…",
+    "neutral_conversation": {
+      "text": "Bardo... Le tue canzoni attirano troppa attenzione. Io preferisco restare nell'ombra, dove i segreti si sussurrano, non si cantano.",
       "type": "default",
       "choices": [
         {
-          "next": "end",
-          "text": "Capito, me ne vado."
+          "text": "Capisco. Ma a volte, una canzone svela più verità di un interrogatorio. Le ombre hanno bisogno della luce per avere senso.",
+          "next": "end"
         }
       ]
     },
     "end": {
-      "text": "Torna al tuo cammino, dove battaglie e gloria ti attendono.",
+      "text": "Forse hai ragione. Finché le tue note non mettono a rischio i miei passi silenziosi, possiamo convivere. Ognuno a modo suo.",
       "type": "end_dialogue"
     }
   },
@@ -19,5 +19,5 @@
     "type": "blabber:rpg"
   },
   "unskippable": false,
-  "start_at": "wrong_guild_warning"
+  "start_at": "neutral_conversation"
 }

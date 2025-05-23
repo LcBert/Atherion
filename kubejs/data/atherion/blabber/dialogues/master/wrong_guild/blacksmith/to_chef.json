@@ -1,17 +1,17 @@
 {
   "states": {
-    "wrong_guild_warning": {
-      "text": "Sho sho… questa non è la tua gilda, guerriero. Le tue mani impugnano la spada, non un arco, né frecce…",
+    "neutral_conversation": {
+      "text": "Fabbro, le tue padelle sono così ben forgiate che il calore si distribuisce perfettamente. I miei piatti non sono mai stati così deliziosi.",
       "type": "default",
       "choices": [
         {
-          "next": "end",
-          "text": "Capito, me ne vado."
+          "text": "Cuoco, è un piacere sapere che le mie creazioni migliorano la tua arte culinaria. Forse potremmo collaborare per creare utensili su misura per le tue esigenze.",
+          "next": "end"
         }
       ]
     },
     "end": {
-      "text": "Torna al tuo cammino, dove battaglie e gloria ti attendono.",
+      "text": "Mi piacerebbe molto. Una cucina ben attrezzata è il segreto di ogni grande piatto. Insieme, possiamo portare la gastronomia del nostro villaggio a nuovi livelli.",
       "type": "end_dialogue"
     }
   },
@@ -19,5 +19,5 @@
     "type": "blabber:rpg"
   },
   "unskippable": false,
-  "start_at": "wrong_guild_warning"
+  "start_at": "neutral_conversation"
 }

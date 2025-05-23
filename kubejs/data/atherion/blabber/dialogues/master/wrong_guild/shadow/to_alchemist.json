@@ -1,17 +1,17 @@
 {
   "states": {
-    "neutral_remark": {
-      "text": "Passi silenziosi... lame nascoste... Non sei qui per mescolare pozioni, ma per scivolare tra le ombre. Le nostre vie non si incrociano spesso, e forse è meglio così.",
+    "wrong_guild_warning": {
+      "text": "Sho sho… questa non è la tua gilda, guerriero. Le tue mani impugnano la spada, non un arco, né frecce…",
       "type": "default",
       "choices": [
         {
           "next": "end",
-          "text": "Meglio che restino separate, in effetti."
+          "text": "Capito, me ne vado."
         }
       ]
     },
     "end": {
-      "text": "Che il veleno che usi non venga mai dal flacone sbagliato. L’errore, per noi, è sempre fatale.",
+      "text": "Torna al tuo cammino, dove battaglie e gloria ti attendono.",
       "type": "end_dialogue"
     }
   },
@@ -19,5 +19,5 @@
     "type": "blabber:rpg"
   },
   "unskippable": false,
-  "start_at": "neutral_remark"
+  "start_at": "wrong_guild_warning"
 }

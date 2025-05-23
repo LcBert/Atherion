@@ -1,17 +1,17 @@
 {
   "states": {
-    "wrong_guild_warning": {
-      "text": "Sho sho… questa non è la tua gilda, guerriero. Le tue mani impugnano la spada, non un arco, né frecce…",
+    "neutral_conversation": {
+      "text": "Bardo, ho notato che le tue canzoni stanno ispirando i nostri commensali. Hai pensato di collaborare con me per creare un'esperienza culinaria accompagnata dalla tua musica?",
       "type": "default",
       "choices": [
         {
-          "next": "end",
-          "text": "Capito, me ne vado."
+          "text": "Capo Cuoco, sarebbe un onore unire le nostre arti. Immagina un banchetto dove ogni portata è accompagnata da una melodia che ne esalta i sapori.",
+          "next": "end"
         }
       ]
     },
     "end": {
-      "text": "Torna al tuo cammino, dove battaglie e gloria ti attendono.",
+      "text": "Perfetto! Iniziamo a sperimentare insieme. La fusione tra cucina e musica potrebbe rivoluzionare il modo in cui deliziamo i nostri ospiti.",
       "type": "end_dialogue"
     }
   },
@@ -19,5 +19,5 @@
     "type": "blabber:rpg"
   },
   "unskippable": false,
-  "start_at": "wrong_guild_warning"
+  "start_at": "neutral_conversation"
 }

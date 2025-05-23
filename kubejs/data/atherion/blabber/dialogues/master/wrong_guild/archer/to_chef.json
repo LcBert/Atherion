@@ -1,17 +1,17 @@
 {
   "states": {
-    "wrong_guild_warning": {
-      "text": "Sho sho… questa non è la tua gilda, guerriero. Le tue mani impugnano la spada, non un arco, né frecce…",
+    "neutral_conversation": {
+      "text": "Ah, uno chef. Immagino che tu sappia come utilizzare ogni parte della preda, anche quelle che io scarto. Nonostante il nostro lavoro sia diverso, entrambi siamo dipendenti dalla natura, dalla sua abbondanza e dai suoi rischi.",
       "type": "default",
       "choices": [
         {
           "next": "end",
-          "text": "Capito, me ne vado."
+          "text": "Già, ognuno con il suo mestiere. Ma un buon pasto si merita, proprio come un buon tiro con l'arco."
         }
       ]
     },
     "end": {
-      "text": "Torna al tuo cammino, dove battaglie e gloria ti attendono.",
+      "text": "Ti auguro una buona giornata in cucina, Chef. E che il tuo piatto sia sempre abbondante come la foresta.",
       "type": "end_dialogue"
     }
   },
@@ -19,5 +19,5 @@
     "type": "blabber:rpg"
   },
   "unskippable": false,
-  "start_at": "wrong_guild_warning"
+  "start_at": "neutral_conversation"
 }

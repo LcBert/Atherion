@@ -1,17 +1,17 @@
 {
   "states": {
-    "wrong_guild_warning": {
-      "text": "Sho sho… questa non è la tua gilda, guerriero. Le tue mani impugnano la spada, non un arco, né frecce…",
+    "neutral_conversation": {
+      "text": "Le tue canzoni, bardo, portano gioia nelle nostre giornate di duro lavoro. Dopo una tua esibizione, i campi sembrano meno faticosi da coltivare.",
       "type": "default",
       "choices": [
         {
-          "next": "end",
-          "text": "Capito, me ne vado."
+          "text": "E il tuo lavoro, contadino, è la linfa della nostra comunità. Senza il tuo impegno, le mie ballate non avrebbero storie di prosperità da raccontare.",
+          "next": "end"
         }
       ]
     },
     "end": {
-      "text": "Torna al tuo cammino, dove battaglie e gloria ti attendono.",
+      "text": "Allora continuiamo a sostenere il villaggio, ciascuno con la propria arte. Che le tue coltivazioni e le mie melodie rendano la nostra terra più fertile e armoniosa.",
       "type": "end_dialogue"
     }
   },
@@ -19,5 +19,5 @@
     "type": "blabber:rpg"
   },
   "unskippable": false,
-  "start_at": "wrong_guild_warning"
+  "start_at": "neutral_conversation"
 }

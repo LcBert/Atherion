@@ -1,17 +1,17 @@
 {
   "states": {
-    "wrong_guild_warning": {
-      "text": "Sho sho… questa non è la tua gilda, guerriero. Le tue mani impugnano la spada, non un arco, né frecce…",
+    "neutral_conversation": {
+      "text": "Ombra, ho notato che preferisci pasti leggeri e facilmente trasportabili. Sto pensando di creare una nuova ricetta che soddisfi le tue esigenze. Hai qualche preferenza?",
       "type": "default",
       "choices": [
         {
-          "next": "end",
-          "text": "Capito, me ne vado."
+          "text": "Capo Cuoco, apprezzo la tua considerazione. Un pasto che possa essere consumato rapidamente e senza lasciare tracce sarebbe ideale.",
+          "next": "end"
         }
       ]
     },
     "end": {
-      "text": "Torna al tuo cammino, dove battaglie e gloria ti attendono.",
+      "text": "Perfetto! Preparerò un piatto che unisca gusto e discrezione, ideale per le tue missioni furtive. La tua efficienza merita il meglio.",
       "type": "end_dialogue"
     }
   },
@@ -19,5 +19,5 @@
     "type": "blabber:rpg"
   },
   "unskippable": false,
-  "start_at": "wrong_guild_warning"
+  "start_at": "neutral_conversation"
 }

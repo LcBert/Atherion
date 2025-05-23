@@ -1,17 +1,17 @@
 {
   "states": {
-    "neutral_warning": {
-      "text": "Salute a te. Le tue mani conoscono la terra e la semina, non fiale e formule. Sei un uomo dei campi, non dei laboratori.",
+    "neutral_conversation": {
+      "text": "Alchimista, ho notato che le tue pozioni hanno migliorato la resistenza delle nostre colture. Potremmo collaborare per sviluppare un fertilizzante più efficace?",
       "type": "default",
       "choices": [
         {
-          "next": "end",
-          "text": "Hai ragione, torno ai miei doveri."
+          "text": "Certamente, Capo Contadino. Ho alcune idee che potrebbero aumentare la resa dei raccolti. Discutiamone insieme.",
+          "next": "end"
         }
       ]
     },
     "end": {
-      "text": "Che il raccolto sia generoso, e la tua terra sempre viva.",
+      "text": "Perfetto! La tua conoscenza dell'alchimia combinata con la nostra esperienza nei campi porterà grandi benefici al villaggio.",
       "type": "end_dialogue"
     }
   },
@@ -19,5 +19,5 @@
     "type": "blabber:rpg"
   },
   "unskippable": false,
-  "start_at": "neutral_warning"
+  "start_at": "neutral_conversation"
 }

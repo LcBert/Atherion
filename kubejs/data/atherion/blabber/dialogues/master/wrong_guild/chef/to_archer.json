@@ -1,17 +1,17 @@
 {
   "states": {
     "neutral_conversation": {
-      "text": "Ah, uno chef. Immagino che tu sappia come utilizzare ogni parte della preda, anche quelle che io scarto. Nonostante il nostro lavoro sia diverso, entrambi siamo dipendenti dalla natura, dalla sua abbondanza e dai suoi rischi.",
+      "text": "Arciere, ho notato che dopo le tue missioni, preferisci pasti leggeri ma nutrienti. Sto pensando di creare un piatto che soddisfi le tue esigenze. Hai qualche preferenza?",
       "type": "default",
       "choices": [
         {
-          "next": "end",
-          "text": "Già, ognuno con il suo mestiere. Ma un buon pasto si merita, proprio come un buon tiro con l'arco."
+          "text": "Capo Cuoco, apprezzo la tua considerazione. Un pasto che mi dia energia senza appesantirmi sarebbe ideale. Magari qualcosa a base di cereali e proteine leggere.",
+          "next": "end"
         }
       ]
     },
     "end": {
-      "text": "Ti auguro una buona giornata in cucina, Chef. E che il tuo piatto sia sempre abbondante come la foresta.",
+      "text": "Perfetto! Preparerò un piatto che unisca gusto e leggerezza, ideale per un arciere come te. La tua efficienza merita il meglio.",
       "type": "end_dialogue"
     }
   },

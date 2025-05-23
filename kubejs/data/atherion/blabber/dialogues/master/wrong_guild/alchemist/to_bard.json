@@ -1,17 +1,17 @@
 {
   "states": {
-    "wrong_guild_warning": {
-      "text": "Sho sho… questa non è la tua gilda, guerriero. Le tue mani impugnano la spada, non un arco, né frecce…",
+    "neutral_remark": {
+      "text": "La tua melodia risuona tra le ampolle e fa ribollire i miei intrugli alchemici! Ma, in un certo senso, anche la musica è una forma di magia.",
       "type": "default",
       "choices": [
         {
           "next": "end",
-          "text": "Capito, me ne vado."
+          "text": "È vero, ogni arte ha la sua magia."
         }
       ]
     },
     "end": {
-      "text": "Torna al tuo cammino, dove battaglie e gloria ti attendono.",
+      "text": "Che le tue note risuonino nell’aria, come le mie pozzioni nelle bottiglie. Ogni scienza ha il suo incanto.",
       "type": "end_dialogue"
     }
   },
@@ -19,5 +19,5 @@
     "type": "blabber:rpg"
   },
   "unskippable": false,
-  "start_at": "wrong_guild_warning"
+  "start_at": "neutral_remark"
 }

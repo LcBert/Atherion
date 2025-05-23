@@ -1,17 +1,17 @@
 {
   "states": {
-    "wrong_guild_warning": {
-      "text": "Sho sho… questa non è la tua gilda, guerriero. Le tue mani impugnano la spada, non un arco, né frecce…",
+    "neutral_conversation": {
+      "text": "Capo Fabbro, ho notato che gli attrezzi agricoli che ci hai fornito stanno mostrando segni di usura. Potremmo discutere su come migliorarli per il prossimo raccolto?",
       "type": "default",
       "choices": [
         {
-          "next": "end",
-          "text": "Capito, me ne vado."
+          "text": "Certamente, Capo Contadino. Posso utilizzare una lega più resistente per aumentarne la durata.",
+          "next": "end"
         }
       ]
     },
     "end": {
-      "text": "Torna al tuo cammino, dove battaglie e gloria ti attendono.",
+      "text": "Apprezzo la tua disponibilità. Una collaborazione efficace tra i nostri mestieri garantirà un raccolto abbondante.",
       "type": "end_dialogue"
     }
   },
@@ -19,5 +19,5 @@
     "type": "blabber:rpg"
   },
   "unskippable": false,
-  "start_at": "wrong_guild_warning"
+  "start_at": "neutral_conversation"
 }

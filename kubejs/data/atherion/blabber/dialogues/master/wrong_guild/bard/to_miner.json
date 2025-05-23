@@ -1,17 +1,17 @@
 {
   "states": {
-    "wrong_guild_warning": {
-      "text": "Sho sho… questa non è la tua gilda, guerriero. Le tue mani impugnano la spada, non un arco, né frecce…",
+    "neutral_conversation": {
+      "text": "Le tue canzoni, bardo, portano luce anche nei tunnel più bui. Dopo una giornata in miniera, la tua musica è come una boccata d'aria fresca.",
       "type": "default",
       "choices": [
         {
-          "next": "end",
-          "text": "Capito, me ne vado."
+          "text": "E il tuo lavoro, amico mio, è la base su cui si costruiscono le nostre storie. Senza il tuo coraggio nelle profondità della terra, non avremmo leggende da cantare.",
+          "next": "end"
         }
       ]
     },
     "end": {
-      "text": "Torna al tuo cammino, dove battaglie e gloria ti attendono.",
+      "text": "Allora continuiamo a sostenere il villaggio, ciascuno con la propria arte. Che le tue canzoni e la mia fatica rendano la nostra comunità più forte.",
       "type": "end_dialogue"
     }
   },
@@ -19,5 +19,5 @@
     "type": "blabber:rpg"
   },
   "unskippable": false,
-  "start_at": "wrong_guild_warning"
+  "start_at": "neutral_conversation"
 }

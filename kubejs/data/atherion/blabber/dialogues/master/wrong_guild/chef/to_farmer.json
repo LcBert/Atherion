@@ -1,17 +1,17 @@
 {
   "states": {
-    "wrong_guild_warning": {
-      "text": "Sho sho… questa non è la tua gilda, guerriero. Le tue mani impugnano la spada, non un arco, né frecce…",
+    "neutral_conversation": {
+      "text": "Contadino, le tue verdure fresche hanno dato un tocco speciale ai piatti di oggi. I clienti non smettono di elogiarle. Hai qualche novità in arrivo dal tuo orto?",
       "type": "default",
       "choices": [
         {
-          "next": "end",
-          "text": "Capito, me ne vado."
+          "text": "Capo Cuoco, sono felice che i miei prodotti siano apprezzati. Sto coltivando una varietà di erbe aromatiche rare che potrebbero interessarti.",
+          "next": "end"
         }
       ]
     },
     "end": {
-      "text": "Torna al tuo cammino, dove battaglie e gloria ti attendono.",
+      "text": "Meraviglioso! Le erbe aromatiche possono elevare i nostri piatti a un nuovo livello. Non vedo l'ora di sperimentare con i tuoi nuovi raccolti.",
       "type": "end_dialogue"
     }
   },
@@ -19,5 +19,5 @@
     "type": "blabber:rpg"
   },
   "unskippable": false,
-  "start_at": "wrong_guild_warning"
+  "start_at": "neutral_conversation"
 }

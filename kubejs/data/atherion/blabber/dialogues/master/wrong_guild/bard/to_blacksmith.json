@@ -1,17 +1,17 @@
 {
   "states": {
-    "wrong_guild_warning": {
-      "text": "Sho sho… questa non è la tua gilda, guerriero. Le tue mani impugnano la spada, non un arco, né frecce…",
+    "neutral_conversation": {
+      "text": "Le tue canzoni, bardo, hanno il potere di infondere coraggio anche nei cuori più timorosi. Dopo una tua esibizione, le mie mani sembrano forgiare con maggiore precisione.",
       "type": "default",
       "choices": [
         {
-          "next": "end",
-          "text": "Capito, me ne vado."
+          "text": "E le tue creazioni, fabbro, sono la base su cui si costruiscono le leggende. Senza le tue armi e armature, le mie storie non avrebbero eroi da cantare.",
+          "next": "end"
         }
       ]
     },
     "end": {
-      "text": "Torna al tuo cammino, dove battaglie e gloria ti attendono.",
+      "text": "Allora continuiamo a lavorare insieme, ciascuno con la propria arte. Che le tue forgiature e le mie melodie rendano il nostro villaggio più forte e unito.",
       "type": "end_dialogue"
     }
   },
@@ -19,5 +19,5 @@
     "type": "blabber:rpg"
   },
   "unskippable": false,
-  "start_at": "wrong_guild_warning"
+  "start_at": "neutral_conversation"
 }

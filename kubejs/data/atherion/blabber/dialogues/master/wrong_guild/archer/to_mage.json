@@ -1,17 +1,17 @@
 {
   "states": {
-    "wrong_guild_warning": {
-      "text": "Sho sho… questa non è la tua gilda, guerriero. Le tue mani impugnano la spada, non un arco, né frecce…",
+    "neutral_conversation": {
+      "text": "Un mago, eh? Penso che tu ti affidi troppo alla tua magia. In realtà, credo che senza i tuoi incantesimi, non riusciresti nemmeno a prendere una lepre. Noi cacciatori non abbiamo bisogno di trucchi, solo abilità.",
       "type": "default",
       "choices": [
         {
-          "next": "end",
-          "text": "Capito, me ne vado."
+          "text": "Forse dovresti imparare a vedere oltre il bersaglio fisico. Un incantesimo ben lanciato può abbattere la preda più velocemente di quanto tu possa mai mirare.",
+          "next": "end"
         }
       ]
     },
     "end": {
-      "text": "Torna al tuo cammino, dove battaglie e gloria ti attendono.",
+      "text": "Vedremo, mago. Sarà interessante vedere chi avrà l'ultima parola. La prossima volta ti mostrerò come si caccia davvero, senza dipendere da pozioni o incantesimi.",
       "type": "end_dialogue"
     }
   },
@@ -19,5 +19,5 @@
     "type": "blabber:rpg"
   },
   "unskippable": false,
-  "start_at": "wrong_guild_warning"
+  "start_at": "neutral_conversation"
 }

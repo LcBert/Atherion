@@ -1,17 +1,17 @@
 {
   "states": {
-    "wrong_guild_warning": {
-      "text": "Sho sho… questa non è la tua gilda, guerriero. Le tue mani impugnano la spada, non un arco, né frecce…",
+    "neutral_conversation": {
+      "text": "Le tue mani costruiscono case, le mie abbattono bersagli a cento passi. È curioso come mestieri tanto diversi servano entrambi il villaggio.",
       "type": "default",
       "choices": [
         {
-          "next": "end",
-          "text": "Capito, me ne vado."
+          "text": "Eppure, senza le mie case, tu e i tuoi arcieri dormireste sotto la pioggia. Direi che il mio lavoro regge il tuo, letteralmente.",
+          "next": "end"
         }
       ]
     },
     "end": {
-      "text": "Torna al tuo cammino, dove battaglie e gloria ti attendono.",
+      "text": "Forse hai ragione, carpentiere. Ma quando il nemico bussa alla porta, non basteranno le travi a fermarlo. Saranno le mie frecce.",
       "type": "end_dialogue"
     }
   },
@@ -19,5 +19,5 @@
     "type": "blabber:rpg"
   },
   "unskippable": false,
-  "start_at": "wrong_guild_warning"
+  "start_at": "neutral_conversation"
 }
