@@ -65,7 +65,7 @@ musicVolumeSlider = true
 noOffhandFireworksWithElytra = true
 
 # This prevents torches from being placed from your offhand at all.
-noOffhandTorchAtAll = false
+noOffhandTorchAtAll = true
 
 # This prevents torches from being placed from your offhand if you have a block in your main hand.
 noOffhandTorchWithBlock = true
