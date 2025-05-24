@@ -1,4 +1,6 @@
 {
+    "name": "Guerriero",
+    "description": "Valoroso combattente corpo a corpo, il Guerriero affronta il nemico con forza e resistenza, proteggendo gli alleati e dominando il campo di battaglia.",
     "powers": [
         "origins:class/warrior",
         "origins:kit/warrior"

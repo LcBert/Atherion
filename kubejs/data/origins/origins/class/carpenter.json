@@ -1,4 +1,6 @@
 {
+    "name": "Carpentiere",
+    "description": "Abile costruttore e artigiano del legno, il Carpentiere realizza strutture, sculture e strumenti utili, offrendo supporto con ingegno e precisione.",
     "powers": [
         "origins:kit/carpenter"
     ],

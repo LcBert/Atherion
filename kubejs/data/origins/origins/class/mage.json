@@ -1,4 +1,6 @@
 {
+    "name": "Mago",
+    "description": "Studioso delle arti magiche, il Mago domina gli elementi e incanala potenti incantesimi per attaccare, difendere o alterare la realtà stessa.",
     "powers": [
         "origins:kit/mage"
     ],

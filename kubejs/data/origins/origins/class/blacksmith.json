@@ -1,4 +1,6 @@
 {
+    "name": "Fabbro",
+    "description": "Mastro delle forge e delle armi, il Fabbro crea e potenzia equipaggiamenti, unendo forza e tecnica per forgiare il destino dei suoi compagni.",
     "powers": [
         "origins:kit/blacksmith"
     ],

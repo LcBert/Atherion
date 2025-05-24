@@ -1,4 +1,6 @@
 {
+    "name": "Fattore",
+    "description": "Custode della terra e degli animali, il Fattore coltiva risorse, alleva bestie e garantisce sostegno con il frutto del suo lavoro quotidiano.",
     "powers": [
         "origins:kit/farmer"
     ],

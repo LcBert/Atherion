@@ -1,4 +1,6 @@
 {
+    "name": "Minatore",
+    "description": "Esperto delle profondità terrestri, il Minatore estrae minerali e gemme rare, aprendo la via a nuove risorse e scoperte sotterranee.",
     "powers": [
         "origins:kit/miner"
     ],

@@ -1,4 +1,6 @@
 {
+    "name": "Bardo",
+    "description": "Artista errante e incantatore di parole, il Bardo usa musica e magia per ispirare gli alleati, confondere i nemici e trasformare ogni battaglia in uno spettacolo.",
     "powers": [
         "origins:kit/bard"
     ],
