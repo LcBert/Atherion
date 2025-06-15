@@ -1,0 +1,10 @@
+{
+    "name": "Cuoco",
+    "description": "Maestro dei sapori e delle ricette, lo Chef prepara piatti che curano, potenziano e rinvigoriscono, trasformando il cibo in un'arma segreta.",
+    "powers": [],
+    "icon": {
+        "item": "brewery:beer_wheat"
+    },
+    "order": 1,
+    "impact": 1
+}

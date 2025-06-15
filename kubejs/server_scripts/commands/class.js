@@ -11,7 +11,7 @@ ServerEvents.commandRegistry(event => {
                                 const activator = command_event.getSource().getPlayerOrException()
                                 const target = Arguments.PLAYER.getResult(command_event, "player")
                                 const level = Arguments.INTEGER.getResult(command_event, "level")
-                                setClass(activator, target, "common", level, true)
+                                setClass(activator, target, "common", level)
                                 return 1
                             })
                         )
@@ -22,7 +22,7 @@ ServerEvents.commandRegistry(event => {
                                 const activator = command_event.getSource().getPlayerOrException()
                                 const target = Arguments.PLAYER.getResult(command_event, "player")
                                 const level = Arguments.INTEGER.getResult(command_event, "level")
-                                setClass(activator, target, "alchemist", level, true)
+                                setClass(activator, target, "alchemist", level)
                                 return 1
                             })
                         )
@@ -33,7 +33,7 @@ ServerEvents.commandRegistry(event => {
                                 const activator = command_event.getSource().getPlayerOrException()
                                 const target = Arguments.PLAYER.getResult(command_event, "player")
                                 const level = Arguments.INTEGER.getResult(command_event, "level")
-                                setClass(activator, target, "archer", level, true)
+                                setClass(activator, target, "archer", level)
                                 return 1
                             })
                         )
@@ -44,7 +44,7 @@ ServerEvents.commandRegistry(event => {
                                 const activator = command_event.getSource().getPlayerOrException()
                                 const target = Arguments.PLAYER.getResult(command_event, "player")
                                 const level = Arguments.INTEGER.getResult(command_event, "level")
-                                setClass(activator, target, "bard", level, true)
+                                setClass(activator, target, "bard", level)
                                 return 1
                             })
                         )
@@ -55,7 +55,7 @@ ServerEvents.commandRegistry(event => {
                                 const activator = command_event.getSource().getPlayerOrException()
                                 const target = Arguments.PLAYER.getResult(command_event, "player")
                                 const level = Arguments.INTEGER.getResult(command_event, "level")
-                                setClass(activator, target, "blacksmith", level, true)
+                                setClass(activator, target, "blacksmith", level)
                                 return 1
                             })
                         )
@@ -66,7 +66,7 @@ ServerEvents.commandRegistry(event => {
                                 const activator = command_event.getSource().getPlayerOrException()
                                 const target = Arguments.PLAYER.getResult(command_event, "player")
                                 const level = Arguments.INTEGER.getResult(command_event, "level")
-                                setClass(activator, target, "carpenter", level, true)
+                                setClass(activator, target, "carpenter", level)
                                 return 1
                             })
                         )
@@ -77,7 +77,7 @@ ServerEvents.commandRegistry(event => {
                                 const activator = command_event.getSource().getPlayerOrException()
                                 const target = Arguments.PLAYER.getResult(command_event, "player")
                                 const level = Arguments.INTEGER.getResult(command_event, "level")
-                                setClass(activator, target, "chef", level, true)
+                                setClass(activator, target, "chef", level)
                                 return 1
                             })
                         )
@@ -88,7 +88,7 @@ ServerEvents.commandRegistry(event => {
                                 const activator = command_event.getSource().getPlayerOrException()
                                 const target = Arguments.PLAYER.getResult(command_event, "player")
                                 const level = Arguments.INTEGER.getResult(command_event, "level")
-                                setClass(activator, target, "farmer", level, true)
+                                setClass(activator, target, "farmer", level)
                                 return 1
                             })
                         )
@@ -99,7 +99,7 @@ ServerEvents.commandRegistry(event => {
                                 const activator = command_event.getSource().getPlayerOrException()
                                 const target = Arguments.PLAYER.getResult(command_event, "player")
                                 const level = Arguments.INTEGER.getResult(command_event, "level")
-                                setClass(activator, target, "mage", level, true)
+                                setClass(activator, target, "mage", level)
                                 return 1
                             })
                         )
@@ -110,7 +110,7 @@ ServerEvents.commandRegistry(event => {
                                 const activator = command_event.getSource().getPlayerOrException()
                                 const target = Arguments.PLAYER.getResult(command_event, "player")
                                 const level = Arguments.INTEGER.getResult(command_event, "level")
-                                setClass(activator, target, "miner", level, true)
+                                setClass(activator, target, "miner", level)
                                 return 1
                             })
                         )
@@ -121,7 +121,7 @@ ServerEvents.commandRegistry(event => {
                                 const activator = command_event.getSource().getPlayerOrException()
                                 const target = Arguments.PLAYER.getResult(command_event, "player")
                                 const level = Arguments.INTEGER.getResult(command_event, "level")
-                                setClass(activator, target, "shadow", level, true)
+                                setClass(activator, target, "shadow", level)
                                 return 1
                             })
                         )
@@ -132,7 +132,7 @@ ServerEvents.commandRegistry(event => {
                                 const activator = command_event.getSource().getPlayerOrException()
                                 const target = Arguments.PLAYER.getResult(command_event, "player")
                                 const level = Arguments.INTEGER.getResult(command_event, "level")
-                                setClass(activator, target, "warrior", level, true)
+                                setClass(activator, target, "warrior", level)
                                 return 1
                             })
                         )
@@ -154,13 +154,13 @@ ServerEvents.commandRegistry(event => {
 
 
 function setClass(_activator, _target, _class, _level) {
-    _target.runCommandSilent("origin set @s origins:class origins:class/" + _class)
-    _target.runCommandSilent("scoreboard players set @s level " + _level)
+    _target.runCommandSilent("origin set @s origins:class origins:class/" + _class + "/" + _class + _level)
+    // _target.runCommandSilent("scoreboard players set @s level " + _level)
     _activator.tell("Set " + _target.getName().getString() + "'s class to " + _class + " level " + _level)
 }
 
 function resetClass(_activator, _target) {
     _target.runCommandSilent("origin set @s origins:class origins:class/common")
-    _target.runCommandSilent("scoreboard players set @s level 0")
+    // _target.runCommandSilent("scoreboard players set @s level 0")
     _activator.tell("Reset " + _target.getName().getString() + "'s class")
 }

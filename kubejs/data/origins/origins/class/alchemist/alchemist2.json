@@ -1,0 +1,10 @@
+{
+    "name": "Alchimista",
+    "description": "Esperto di pozioni e reagenti, l'Alchimista crea elisir, veleni e potenziamenti. Versatile e ingegnoso, trasforma ogni situazione con le sue formule arcane.",
+    "powers": [],
+    "icon": {
+        "item": "minecraft:potion"
+    },
+    "order": 1,
+    "impact": 1
+}

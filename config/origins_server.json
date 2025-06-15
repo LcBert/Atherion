@@ -115,7 +115,8 @@
     },
     "origins:class/common": {
       "enabled": true,
-      "origins:test": true
+      "origins:test": true,
+      "origins:block_protection/blacksmith/usable_t0": true
     },
     "origins:class/shadow": {
       "enabled": true
@@ -212,6 +213,201 @@
     "origins:race/orc": {
       "enabled": true,
       "origins:race/orc_scale": true
+    },
+    "origins:class/farmer/farmer0": {
+      "enabled": true
+    },
+    "origins:class/farmer/farmer4": {
+      "enabled": true
+    },
+    "origins:class/farmer/farmer3": {
+      "enabled": true
+    },
+    "origins:class/farmer/farmer2": {
+      "enabled": true
+    },
+    "origins:class/farmer/farmer1": {
+      "enabled": true
+    },
+    "origins:class/alchemist/alchemist2": {
+      "enabled": true
+    },
+    "origins:class/alchemist/alchemist1": {
+      "enabled": true
+    },
+    "origins:class/alchemist/alchemist0": {
+      "enabled": true
+    },
+    "origins:class/bard/bard0": {
+      "enabled": true
+    },
+    "origins:class/bard/bard3": {
+      "enabled": true
+    },
+    "origins:class/bard/bard4": {
+      "enabled": true
+    },
+    "origins:class/alchemist/alchemist4": {
+      "enabled": true
+    },
+    "origins:class/bard/bard1": {
+      "enabled": true
+    },
+    "origins:class/alchemist/alchemist3": {
+      "enabled": true
+    },
+    "origins:class/bard/bard2": {
+      "enabled": true
+    },
+    "origins:class/archer/archer4": {
+      "enabled": true
+    },
+    "origins:class/archer/archer3": {
+      "enabled": true
+    },
+    "origins:class/archer/archer2": {
+      "enabled": true
+    },
+    "origins:class/archer/archer1": {
+      "enabled": true
+    },
+    "origins:class/archer/archer0": {
+      "enabled": true
+    },
+    "origins:class/miner/miner0": {
+      "enabled": true
+    },
+    "origins:class/miner/miner2": {
+      "enabled": true
+    },
+    "origins:class/miner/miner1": {
+      "enabled": true
+    },
+    "origins:class/miner/miner4": {
+      "enabled": true
+    },
+    "origins:class/miner/miner3": {
+      "enabled": true
+    },
+    "origins:class/carpenter/carpenter0": {
+      "enabled": true
+    },
+    "origins:class/carpenter/carpenter2": {
+      "enabled": true
+    },
+    "origins:class/chef/chef0": {
+      "enabled": true
+    },
+    "origins:class/shadow/shadow0": {
+      "enabled": true
+    },
+    "origins:class/carpenter/carpenter1": {
+      "enabled": true
+    },
+    "origins:class/carpenter/carpenter4": {
+      "enabled": true
+    },
+    "origins:class/chef/chef2": {
+      "enabled": true
+    },
+    "origins:class/shadow/shadow2": {
+      "enabled": true
+    },
+    "origins:class/carpenter/carpenter3": {
+      "enabled": true
+    },
+    "origins:class/chef/chef1": {
+      "enabled": true
+    },
+    "origins:class/shadow/shadow1": {
+      "enabled": true
+    },
+    "origins:class/chef/chef4": {
+      "enabled": true
+    },
+    "origins:class/shadow/shadow4": {
+      "enabled": true
+    },
+    "origins:class/chef/chef3": {
+      "enabled": true
+    },
+    "origins:class/shadow/shadow3": {
+      "enabled": true
+    },
+    "origins:class/blacksmith/blacksmith0": {
+      "enabled": true,
+      "origins:test": true,
+      "origins:block_protection/blacksmith/usable_t0": true,
+      "origins:block_protection/blacksmith/usable_t1": true,
+      "origins:block_protection/blacksmith/usable_t2": true,
+      "origins:block_protection/blacksmith/usable_t3": true,
+      "origins:block_protection/blacksmith/usable_t4": true
+    },
+    "origins:class/blacksmith/blacksmith2": {
+      "enabled": true,
+      "origins:test": true,
+      "origins:block_protection/blacksmith/usable_t0": true,
+      "origins:block_protection/blacksmith/usable_t1": true,
+      "origins:block_protection/blacksmith/usable_t2": true,
+      "origins:block_protection/blacksmith/usable_t3": true,
+      "origins:block_protection/blacksmith/usable_t4": true
+    },
+    "origins:class/blacksmith/blacksmith1": {
+      "enabled": true,
+      "origins:test": true,
+      "origins:block_protection/blacksmith/usable_t0": true,
+      "origins:block_protection/blacksmith/usable_t1": true,
+      "origins:block_protection/blacksmith/usable_t2": true,
+      "origins:block_protection/blacksmith/usable_t3": true,
+      "origins:block_protection/blacksmith/usable_t4": true
+    },
+    "origins:class/blacksmith/blacksmith4": {
+      "enabled": true,
+      "origins:test": true,
+      "origins:block_protection/blacksmith/usable_t0": true,
+      "origins:block_protection/blacksmith/usable_t1": true,
+      "origins:block_protection/blacksmith/usable_t2": true,
+      "origins:block_protection/blacksmith/usable_t3": true,
+      "origins:block_protection/blacksmith/usable_t4": true
+    },
+    "origins:class/blacksmith/blacksmith3": {
+      "enabled": true,
+      "origins:test": true,
+      "origins:block_protection/blacksmith/usable_t0": true,
+      "origins:block_protection/blacksmith/usable_t1": true,
+      "origins:block_protection/blacksmith/usable_t2": true,
+      "origins:block_protection/blacksmith/usable_t3": true,
+      "origins:block_protection/blacksmith/usable_t4": true
+    },
+    "origins:class/warrior/warrior2": {
+      "enabled": true
+    },
+    "origins:class/warrior/warrior1": {
+      "enabled": true
+    },
+    "origins:class/warrior/warrior0": {
+      "enabled": true
+    },
+    "origins:class/warrior/warrior4": {
+      "enabled": true
+    },
+    "origins:class/warrior/warrior3": {
+      "enabled": true
+    },
+    "origins:class/mage/mage3": {
+      "enabled": true
+    },
+    "origins:class/mage/mage4": {
+      "enabled": true
+    },
+    "origins:class/mage/mage1": {
+      "enabled": true
+    },
+    "origins:class/mage/mage2": {
+      "enabled": true
+    },
+    "origins:class/mage/mage0": {
+      "enabled": true
     }
   }
 }

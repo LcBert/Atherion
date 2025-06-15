@@ -1,0 +1,10 @@
+{
+    "name": "Mago",
+    "description": "Studioso delle arti magiche, il Mago domina gli elementi e incanala potenti incantesimi per attaccare, difendere o alterare la realtà stessa.",
+    "powers": [],
+    "icon": {
+        "item": "elemental_wizards_rpg:staff_elemental"
+    },
+    "order": 1,
+    "impact": 1
+}
