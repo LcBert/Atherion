@@ -1,0 +1,10 @@
+{
+    "name": "Arcere",
+    "description": "Maestro del combattimento a distanza, l'Arcere colpisce con precisione letale. Agile e silenzioso, abbatte i nemici prima che si accorgano della sua presenza.",
+    "powers": [],
+    "icon": {
+        "item": "minecraft:bow"
+    },
+    "order": 1,
+    "impact": 1
+}

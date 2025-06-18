@@ -1,19 +1,7 @@
 {
-    "condition": "minecraft:all_of",
-    "terms": [
-        {
-            "condition": "minecraft:entity_properties",
-            "entity": "this",
-            "predicate": {
-                "nbt": "{cardinal_components:{\"origins:origin\":{OriginLayers:[{Origin:\"origins:class/chef\"}]}}}"
-            }
-        },
-        {
-            "condition": "minecraft:entity_scores",
-            "entity": "this",
-            "scores": {
-                "level": 3
-            }
-        }
-    ]
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+        "nbt": "{cardinal_components:{\"origins:origin\":{OriginLayers:[{Origin:\"origins:class/chef/chef3\"}]}}}"
+    }
 }
