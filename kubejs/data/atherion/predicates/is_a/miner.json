@@ -1,7 +1,40 @@
 {
-    "condition": "minecraft:entity_properties",
-    "entity": "this",
-    "predicate": {
-        "nbt": "{cardinal_components:{\"origins:origin\":{OriginLayers:[{Origin:\"origins:class/miner\"}]}}}"
-    }
+    "condition": "minecraft:any_of",
+    "terms": [
+        {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+                "nbt": "{cardinal_components:{\"origins:origin\":{OriginLayers:[{Origin:\"origins:class/miner/miner0\"}]}}}"
+            }
+        },
+        {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+                "nbt": "{cardinal_components:{\"origins:origin\":{OriginLayers:[{Origin:\"origins:class/miner/miner1\"}]}}}"
+            }
+        },
+        {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+                "nbt": "{cardinal_components:{\"origins:origin\":{OriginLayers:[{Origin:\"origins:class/miner/miner2\"}]}}}"
+            }
+        },
+        {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+                "nbt": "{cardinal_components:{\"origins:origin\":{OriginLayers:[{Origin:\"origins:class/miner/miner3\"}]}}}"
+            }
+        },
+        {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+                "nbt": "{cardinal_components:{\"origins:origin\":{OriginLayers:[{Origin:\"origins:class/miner/miner4\"}]}}}"
+            }
+        }
+    ]
 }
