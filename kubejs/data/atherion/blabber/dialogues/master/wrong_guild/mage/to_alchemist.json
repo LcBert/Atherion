@@ -1,17 +1,27 @@
 {
   "states": {
-    "wrong_guild_warning": {
-      "text": "Sho sho… questa non è la tua gilda, guerriero. Le tue mani impugnano la spada, non un arco, né frecce…",
+    "dialogue": {
+      "text": "Ah, alchimista! La tua visita è sempre una gradita deviazione dai tomi polverosi. Cosa ti porta alla torre oggi?",
       "type": "default",
       "choices": [
         {
-          "next": "end",
-          "text": "Capito, me ne vado."
+          "next": "response",
+          "text": "Nulla di urgente. Passavo di qui e volevo solo porgerti un saluto."
         }
       ]
     },
+    "response": {
+      "text": "Un gesto nobile, come le tue pozioni. Che le tue formule trovino sempre la giusta reazione.",
+      "choices": [
+        {
+          "next": "end",
+          "text": "A presto."
+        }
+      ],
+      "type": "default"
+    },
     "end": {
-      "text": "Torna al tuo cammino, dove battaglie e gloria ti attendono.",
+      "text": "",
       "type": "end_dialogue"
     }
   },
@@ -19,5 +29,5 @@
     "type": "blabber:rpg"
   },
   "unskippable": false,
-  "start_at": "wrong_guild_warning"
+  "start_at": "dialogue"
 }

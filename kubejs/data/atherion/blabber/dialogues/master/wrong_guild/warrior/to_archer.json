@@ -1,17 +1,27 @@
 {
   "states": {
-    "wrong_guild_warning": {
-      "text": "Sho sho… questa non è la tua gilda, guerriero. Le tue mani impugnano la spada, non un arco, né frecce…",
+    "dialogue": {
+      "text": "Arciere, che ci fai oggi nella sala dei guerrieri?",
       "type": "default",
       "choices": [
         {
-          "next": "end",
-          "text": "Capito, me ne vado."
+          "next": "response",
+          "text": "Volevo venire a salutarti e vedere come vanno le cose qui."
         }
       ]
     },
+    "response": {
+      "text": "È sempre un piacere vederti. La tua presenza dà forza alla gilda.",
+      "choices": [
+        {
+          "next": "end",
+          "text": "Grazie. A presto!"
+        }
+      ],
+      "type": "default"
+    },
     "end": {
-      "text": "Torna al tuo cammino, dove battaglie e gloria ti attendono.",
+      "text": "",
       "type": "end_dialogue"
     }
   },
@@ -19,5 +29,5 @@
     "type": "blabber:rpg"
   },
   "unskippable": false,
-  "start_at": "wrong_guild_warning"
+  "start_at": "dialogue"
 }

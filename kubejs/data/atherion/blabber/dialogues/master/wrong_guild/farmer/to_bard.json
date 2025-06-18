@@ -1,17 +1,27 @@
 {
   "states": {
-    "neutral_conversation": {
-      "text": "Bardo, la tua musica ha sollevato gli animi dei miei lavoratori durante il raccolto. Potremmo organizzare una festa per celebrare insieme?",
+    "dialogue": {
+      "text": "Bardo, cosa ti porta tra i fattori oggi? Non credo che i nostri lavori ti possano ispirare.",
       "type": "default",
       "choices": [
         {
-          "text": "Con piacere, Capo Contadino! Comporrò una ballata che onori il duro lavoro dei tuoi contadini.",
-          "next": "end"
+          "next": "response",
+          "text": "Cerco ispirazione per nuove canzoni, capogilda. I suoni della terra e degli animali mi parlano."
         }
       ]
     },
+    "response": {
+      "text": "I suoni della terra e degli animali, eh? Se trovi qualcosa di interessante, sarò curioso di ascoltarla.",
+      "choices": [
+        {
+          "next": "end",
+          "text": "Grazie,lo farò sicuramente. Arrivederci!"
+        }
+      ],
+      "type": "default"
+    },
     "end": {
-      "text": "Sarà un evento memorabile. La tua arte darà lustro ai nostri sforzi nei campi.",
+      "text": "",
       "type": "end_dialogue"
     }
   },
@@ -19,5 +29,5 @@
     "type": "blabber:rpg"
   },
   "unskippable": false,
-  "start_at": "neutral_conversation"
+  "start_at": "dialogue"
 }

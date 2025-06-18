@@ -1,17 +1,27 @@
 {
   "states": {
-    "neutral_conversation": {
-      "text": "Arcere, ho notato che il tuo nuovo arco si adatta perfettamente. La struttura che ho costruito per te soddisfa le tue esigenze?",
+    "dialogue": {
+      "text": "Arciere, cosa ti porta oggi nella gilda dei carpentieri?",
       "type": "default",
       "choices": [
         {
-          "text": "Assolutamente, Carpentiere! Grazie alla tua maestria, il mio arco è resistente e preciso. È un piacere scoccare frecce con un'arma così ben fatta.",
-          "next": "end"
+          "next": "response",
+          "text": "Sono qui per un saluto veloce."
         }
       ]
     },
+    "response": {
+      "text": "Capisco. La gilda resta sempre aperta, se ti servirà qualcosa.",
+      "choices": [
+        {
+          "next": "end",
+          "text": "Grazie. A presto."
+        }
+      ],
+      "type": "default"
+    },
     "end": {
-      "text": "Sono lieto che il mio lavoro contribuisca al tuo successo sul campo. Continuiamo a collaborare per proteggere il nostro villaggio.",
+      "text": "",
       "type": "end_dialogue"
     }
   },
@@ -19,5 +29,5 @@
     "type": "blabber:rpg"
   },
   "unskippable": false,
-  "start_at": "neutral_conversation"
+  "start_at": "dialogue"
 }

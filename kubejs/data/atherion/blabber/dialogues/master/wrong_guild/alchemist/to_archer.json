@@ -1,17 +1,27 @@
 {
   "states": {
-    "neutral_remark": {
-      "text": "Occhio attento e mano ferma… ma non sei qui per distillare essenze. Le tue frecce volano, le mie miscele esplodono. Strade diverse, stessa precisione.",
+    "dialogue": {
+      "text": "Arciere, che fai qui tra i veleni e le pozioni?",
       "type": "default",
       "choices": [
         {
-          "next": "end",
-          "text": "Giusto. Torno al mio bersaglio."
+          "next": "response",
+          "text": "Passavo di qui e volevo solo salutarti, capogilda."
         }
       ]
     },
+    "response": {
+      "text": "Un saluto è sempre benvenuto. Che i tuoi colpi restino precisi.",
+      "choices": [
+        {
+          "next": "end",
+          "text": "A presto."
+        }
+      ],
+      "type": "default"
+    },
     "end": {
-      "text": "Che il vento segua sempre il volo delle tue frecce. La scienza, come l’arco, richiede pazienza.",
+      "text": "",
       "type": "end_dialogue"
     }
   },
@@ -19,5 +29,5 @@
     "type": "blabber:rpg"
   },
   "unskippable": false,
-  "start_at": "neutral_remark"
+  "start_at": "dialogue"
 }

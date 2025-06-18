@@ -1,17 +1,27 @@
 {
   "states": {
-    "neutral_conversation": {
-      "text": "Arciere, ho notato che dopo le tue missioni, preferisci pasti leggeri ma nutrienti. Sto pensando di creare un piatto che soddisfi le tue esigenze. Hai qualche preferenza?",
+    "dialogue": {
+      "text": "Arciere, che fai qui tra i veleni e le pozioni?",
       "type": "default",
       "choices": [
         {
-          "text": "Capo Cuoco, apprezzo la tua considerazione. Un pasto che mi dia energia senza appesantirmi sarebbe ideale. Magari qualcosa a base di cereali e proteine leggere.",
-          "next": "end"
+          "next": "response",
+          "text": "Passavo di qui e volevo solo salutarti, capogilda."
         }
       ]
     },
+    "response": {
+      "text": "Un saluto è sempre benvenuto. Che i tuoi colpi restino precisi.",
+      "choices": [
+        {
+          "next": "end",
+          "text": "A presto."
+        }
+      ],
+      "type": "default"
+    },
     "end": {
-      "text": "Perfetto! Preparerò un piatto che unisca gusto e leggerezza, ideale per un arciere come te. La tua efficienza merita il meglio.",
+      "text": "",
       "type": "end_dialogue"
     }
   },
@@ -19,5 +29,5 @@
     "type": "blabber:rpg"
   },
   "unskippable": false,
-  "start_at": "neutral_conversation"
+  "start_at": "dialogue"
 }

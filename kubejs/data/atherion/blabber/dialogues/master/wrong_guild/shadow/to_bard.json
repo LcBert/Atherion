@@ -1,17 +1,27 @@
 {
   "states": {
-    "wrong_guild_warning": {
-      "text": "Sho sho… questa non è la tua gilda, guerriero. Le tue mani impugnano la spada, non un arco, né frecce…",
+    "dialogue": {
+      "text": "Bardo, che ti porta nelle profondità delle Ombre? Non sembri il tipo da queste parti.",
       "type": "default",
       "choices": [
         {
-          "next": "end",
-          "text": "Capito, me ne vado."
+          "next": "response",
+          "text": "Sto cercando nuovi testi da comporre, capogilda. Ogni luogo ha le sue melodie e le sue parole da cantare."
         }
       ]
     },
+    "response": {
+      "text": "Nuovi testi, eh? Le Ombre possono ispirarti, ma spero che tu non ti perda nelle oscurità delle parole. Non tutte le storie sono destinate a essere cantate.",
+      "choices": [
+        {
+          "next": "end",
+          "text": "Non temere. Troverò solo ciò che merita di essere cantato. Arrivederci."
+        }
+      ],
+      "type": "default"
+    },
     "end": {
-      "text": "Torna al tuo cammino, dove battaglie e gloria ti attendono.",
+      "text": "",
       "type": "end_dialogue"
     }
   },
@@ -19,5 +29,5 @@
     "type": "blabber:rpg"
   },
   "unskippable": false,
-  "start_at": "wrong_guild_warning"
+  "start_at": "dialogue"
 }

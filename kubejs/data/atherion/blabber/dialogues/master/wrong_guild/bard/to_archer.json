@@ -1,17 +1,27 @@
 {
   "states": {
-    "neutral_conversation": {
-      "text": "Le tue canzoni, bardo, sono solo rumore. In battaglia, servono frecce, non melodie.",
+    "dialogue": {
+      "text": "Arciere, di nuovo a cercare audience tra i bardi? Non è il tuo posto.",
       "type": "default",
       "choices": [
         {
-          "text": "Eppure, le mie melodie hanno sollevato il morale di molti arcieri, anche quando le frecce erano finite.",
-          "next": "end"
+          "next": "response",
+          "text": "La musica può essere affilata come una freccia. Non sottovalutare il mio talento."
         }
       ]
     },
+    "response": {
+      "text": "Vedremo se il tuo talento supera il rumore delle corde. Qui si fa sul serio.",
+      "choices": [
+        {
+          "next": "end",
+          "text": "Non temere. La mia freccia troverà sempre il suo bersaglio. Addio."
+        }
+      ],
+      "type": "default"
+    },
     "end": {
-      "text": "Forse. Ma io preferisco affidarmi alla mia mira, non alle parole. Tieniti le tue canzoni.",
+      "text": "",
       "type": "end_dialogue"
     }
   },
@@ -19,5 +29,5 @@
     "type": "blabber:rpg"
   },
   "unskippable": false,
-  "start_at": "neutral_conversation"
+  "start_at": "dialogue"
 }

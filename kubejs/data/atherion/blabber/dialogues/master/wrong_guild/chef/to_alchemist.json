@@ -1,17 +1,27 @@
 {
   "states": {
-    "neutral_conversation": {
-      "text": "Alchimista, ho notato che le tue nuove pozioni stanno avendo un grande successo tra i nostri avventurieri. Hai pensato di collaborare con me per creare piatti che potenzino gli effetti delle tue creazioni?",
+    "dialogue": {
+      "text": "Alchimista, che ci fai qui nella cucina dei Cuochi?",
       "type": "default",
       "choices": [
         {
-          "text": "Capo Cuoco, sarebbe un onore unire le nostre arti. Immagina un pasto che non solo sazia, ma amplifica le capacità di chi lo consuma.",
-          "next": "end"
+          "next": "response",
+          "text": "Passavo di qui e volevo semplicemente salutarti."
         }
       ]
     },
+    "response": {
+      "text": "È sempre un piacere vederti. Passa a trovarci più spesso.",
+      "choices": [
+        {
+          "next": "end",
+          "text": "Lo farò, grazie! A presto."
+        }
+      ],
+      "type": "default"
+    },
     "end": {
-      "text": "Perfetto! Iniziamo a sperimentare insieme. La fusione tra cucina e alchimia potrebbe rivoluzionare il modo in cui supportiamo i nostri compagni.",
+      "text": "",
       "type": "end_dialogue"
     }
   },
@@ -19,5 +29,5 @@
     "type": "blabber:rpg"
   },
   "unskippable": false,
-  "start_at": "neutral_conversation"
+  "start_at": "dialogue"
 }

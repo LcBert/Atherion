@@ -1,17 +1,27 @@
 {
   "states": {
-    "neutral_conversation": {
-      "text": "Le tue pozioni hanno salvato più di un mio compagno, alchimista. Senza di te, le nostre canzoni avrebbero avuto finali più tristi.",
+    "dialogue": {
+      "text": "Alchimista! Non ti vedevo da un po’. Sei venuto a distillarci un po’ di buon umore oggi?",
       "type": "default",
       "choices": [
         {
-          "text": "E le tue ballate hanno sollevato il morale anche nei momenti più bui. La tua musica è un balsamo per l'anima, tanto quanto le mie miscele lo sono per il corpo.",
-          "next": "end"
+          "next": "response",
+          "text": "Solo se promettete di non metterlo in rima!"
         }
       ]
     },
+    "response": {
+      "text": "Ah! Mai fidarsi di un bardo, alchimista. Ma resta sempre un piacere vederti.",
+      "choices": [
+        {
+          "next": "end",
+          "text": "A presto, amico mio."
+        }
+      ],
+      "type": "default"
+    },
     "end": {
-      "text": "Allora continuiamo a intrecciare le nostre arti. Insieme, possiamo affrontare qualsiasi sfida.",
+      "text": "",
       "type": "end_dialogue"
     }
   },
@@ -19,5 +29,5 @@
     "type": "blabber:rpg"
   },
   "unskippable": false,
-  "start_at": "neutral_conversation"
+  "start_at": "dialogue"
 }

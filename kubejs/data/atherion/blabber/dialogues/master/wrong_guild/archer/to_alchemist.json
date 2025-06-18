@@ -1,17 +1,27 @@
 {
   "states": {
-    "neutral_conversation": {
-      "text": "Un alchimista, eh? La tua arte non è quella della caccia, ma la conoscenza che possiedi potrebbe essere utile. So che le tue pozioni e infusi possono avere poteri inaspettati, ma non è un mondo facile per chi vive nel buio delle foreste.",
+    "dialogue": {
+      "text": "Alchimista, non è comune vederti nei pressi del campo di tiro. Qual è il motivo della tua visita?",
       "type": "default",
       "choices": [
         {
-          "next": "end",
-          "text": "La mia arte è diversa, ma i tuoi cacciatori fanno il loro dovere. Ciò che facciamo entrambi è necessario per il bene di tutti."
+          "next": "response",
+          "text": "Nessun motivo urgente, solo un rapido saluto mentre passavo di qui."
         }
       ]
     },
+    "response": {
+      "text": "Capisco. Che il vento ti sia favorevole nei tuoi spostamenti.",
+      "choices": [
+        {
+          "next": "end",
+          "text": "Buona giornata, capogilda."
+        }
+      ],
+      "type": "default"
+    },
     "end": {
-      "text": "Non siamo nemici, e nemmeno alleati stretti. Ma c'è rispetto tra noi, anche se le strade che percorriamo sono diverse. Continua a fare ciò che sai fare.",
+      "text": "",
       "type": "end_dialogue"
     }
   },
@@ -19,5 +29,5 @@
     "type": "blabber:rpg"
   },
   "unskippable": false,
-  "start_at": "neutral_conversation"
+  "start_at": "dialogue"
 }

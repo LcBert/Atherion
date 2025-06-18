@@ -1,17 +1,27 @@
 {
   "states": {
-    "wrong_guild_warning": {
-      "text": "Sho sho… questa non è la tua gilda, guerriero. Le tue mani impugnano la spada, non un arco, né frecce…",
+    "dialogue": {
+      "text": "Alchimista, la tua presenza nei nostri campi d’addestramento è inusuale. Hai bisogno di qualcosa?",
       "type": "default",
       "choices": [
         {
-          "next": "end",
-          "text": "Capito, me ne vado."
+          "next": "response",
+          "text": "Niente in particolare, solo un saluto mentre ero di passaggio."
         }
       ]
     },
+    "response": {
+      "text": "Molto bene. Che il tuo cammino sia privo di intoppi.",
+      "choices": [
+        {
+          "next": "end",
+          "text": "Buona giornata, capogilda."
+        }
+      ],
+      "type": "default"
+    },
     "end": {
-      "text": "Torna al tuo cammino, dove battaglie e gloria ti attendono.",
+      "text": "",
       "type": "end_dialogue"
     }
   },
@@ -19,5 +29,5 @@
     "type": "blabber:rpg"
   },
   "unskippable": false,
-  "start_at": "wrong_guild_warning"
+  "start_at": "dialogue"
 }

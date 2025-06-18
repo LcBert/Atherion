@@ -1,17 +1,27 @@
 {
   "states": {
-    "wrong_guild_warning": {
-      "text": "Sho sho… questa non è la tua gilda, guerriero. Le tue mani impugnano la spada, non un arco, né frecce…",
+    "dialogue": {
+      "text": "Bardo, che piacere vederti! Cosa ti porta tra i nostri incantesimi oggi?",
       "type": "default",
       "choices": [
         {
-          "next": "end",
-          "text": "Capito, me ne vado."
+          "next": "response",
+          "text": "Sto cercando nuovi testi da comporre, capogilda. Le magie e le parole degli incantatori sono sempre fonte di grande ispirazione."
         }
       ]
     },
+    "response": {
+      "text": "Ahh.. le parole sono potenti, proprio come le magie. Spero che tu possa trovare la tua melodia tra i nostri incantesimi. Buona ricerca, bardo!",
+      "choices": [
+        {
+          "next": "end",
+          "text": "Grazie. Troverò sicuramente l'ispirazione giusta. Arrivederci!"
+        }
+      ],
+      "type": "default"
+    },
     "end": {
-      "text": "Torna al tuo cammino, dove battaglie e gloria ti attendono.",
+      "text": "",
       "type": "end_dialogue"
     }
   },
@@ -19,5 +29,5 @@
     "type": "blabber:rpg"
   },
   "unskippable": false,
-  "start_at": "wrong_guild_warning"
+  "start_at": "dialogue"
 }

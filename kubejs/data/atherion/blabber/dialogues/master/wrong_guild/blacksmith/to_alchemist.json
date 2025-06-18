@@ -1,17 +1,27 @@
 {
   "states": {
-    "neutral_conversation": {
-      "text": "Fabbro, ho bisogno di un contenitore resistente al calore per le mie pozioni. Le tue creazioni possono sopportare le temperature dei miei esperimenti?",
+    "dialogue": {
+      "text": "Alchimista, cosa ti porta nella fucina dei Fabbri? Non abbiamo bisogno delle tue pozioni qui.",
       "type": "default",
       "choices": [
         {
-          "text": "Sei sempre a cercare soluzioni rapide con le tue pozioni instabili. Le mie creazioni sono fatte per durare, non per contenere i tuoi intrugli volatili.",
-          "next": "end"
+          "next": "response",
+          "text": "Passavo solo per un saluto, nulla di più."
         }
       ]
     },
+    "response": {
+      "text": "Un saluto, eh? Bene, ora che l'hai dato, puoi tornare ai tuoi alambicchi.",
+      "choices": [
+        {
+          "next": "end",
+          "text": "Buona giornata."
+        }
+      ],
+      "type": "default"
+    },
     "end": {
-      "text": "Le mie 'pozioni instabili' hanno salvato più vite di quante le tue lame abbiano mai protetto. Ma non preoccuparti, troverò qualcuno con una mente più aperta.",
+      "text": "",
       "type": "end_dialogue"
     }
   },
@@ -19,5 +29,5 @@
     "type": "blabber:rpg"
   },
   "unskippable": false,
-  "start_at": "neutral_conversation"
+  "start_at": "dialogue"
 }

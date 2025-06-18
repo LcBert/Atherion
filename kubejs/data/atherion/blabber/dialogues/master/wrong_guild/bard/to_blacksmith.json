@@ -1,17 +1,27 @@
 {
   "states": {
-    "neutral_conversation": {
-      "text": "Le tue canzoni, bardo, hanno il potere di infondere coraggio anche nei cuori più timorosi. Dopo una tua esibizione, le mie mani sembrano forgiare con maggiore precisione.",
+    "dialogue": {
+      "text": "Fabbro, che ti porta tra i bardi? Non pensavo fossi un amante della musica.",
       "type": "default",
       "choices": [
         {
-          "text": "E le tue creazioni, fabbro, sono la base su cui si costruiscono le leggende. Senza le tue armi e armature, le mie storie non avrebbero eroi da cantare.",
-          "next": "end"
+          "next": "response",
+          "text": "Sto cercando ispirazione per la mia arte, capogilda. Le parole dei bardi possono dare nuova linfa alla mia forgiatura."
         }
       ]
     },
+    "response": {
+      "text": "I nostri strumenti, sia il martello che la lira, hanno qualcosa in comune: plasmano e modellano ciò che toccano. Se troverai ispirazione sarà interessante vedere cosa ne nascerà.",
+      "choices": [
+        {
+          "next": "end",
+          "text": "Grazie, capogilda. Vedremo cosa riuscirò a forgiare. Arrivederci."
+        }
+      ],
+      "type": "default"
+    },
     "end": {
-      "text": "Allora continuiamo a lavorare insieme, ciascuno con la propria arte. Che le tue forgiature e le mie melodie rendano il nostro villaggio più forte e unito.",
+      "text": "",
       "type": "end_dialogue"
     }
   },
@@ -19,5 +29,5 @@
     "type": "blabber:rpg"
   },
   "unskippable": false,
-  "start_at": "neutral_conversation"
+  "start_at": "dialogue"
 }

@@ -1,17 +1,27 @@
 {
   "states": {
-    "neutral_conversation": {
-      "text": "Bardo, ho notato che le tue canzoni stanno ispirando i nostri commensali. Hai pensato di collaborare con me per creare un'esperienza culinaria accompagnata dalla tua musica?",
+    "dialogue": {
+      "text": "Bardo, che piacere vederti! Cosa ti porta nella nostra cucina oggi?",
       "type": "default",
       "choices": [
         {
-          "text": "Capo Cuoco, sarebbe un onore unire le nostre arti. Immagina un banchetto dove ogni portata è accompagnata da una melodia che ne esalta i sapori.",
-          "next": "end"
+          "next": "response",
+          "text": "Sto cercando nuove melodie, capogilda. Ogni piatto ha i suoi sapori, e credo che anche qui ci siano note da scoprire."
         }
       ]
     },
+    "response": {
+      "text": "Ah, la cucina è proprio come la musica, bardo: ogni ingrediente contribuisce alla sua armonia. Spero che tu possa trovare qualche piatto che ispiri la tua musica.",
+      "choices": [
+        {
+          "next": "end",
+          "text": "Grazie. Troverò sicuramente una melodia che si adatti al sapore. Arrivederci!"
+        }
+      ],
+      "type": "default"
+    },
     "end": {
-      "text": "Perfetto! Iniziamo a sperimentare insieme. La fusione tra cucina e musica potrebbe rivoluzionare il modo in cui deliziamo i nostri ospiti.",
+      "text": "",
       "type": "end_dialogue"
     }
   },
@@ -19,5 +29,5 @@
     "type": "blabber:rpg"
   },
   "unskippable": false,
-  "start_at": "neutral_conversation"
+  "start_at": "dialogue"
 }

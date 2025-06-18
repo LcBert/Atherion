@@ -1,17 +1,27 @@
 {
   "states": {
-    "neutral_conversation": {
-      "text": "Fabbro, le tue spade non solo tagliano, ma raccontano storie. Ogni lama sembra cantare una ballata di battaglie e gloria.",
+    "dialogue": {
+      "text": "Bardo, non ti aspettavo nella nostra fucina. Cosa ti porta qui oggi?",
       "type": "default",
       "choices": [
         {
-          "text": "Bardo, le tue parole danno vita alle mie creazioni. Senza la tua musica, le mie armi sarebbero solo metallo freddo.",
-          "next": "end"
+          "next": "response",
+          "text": "Sto cercando nuove melodie, capogilda. Ogni battito di martello ha un ritmo che potrebbe ispirare una nuova composizione."
         }
       ]
     },
+    "response": {
+      "text": "Il suono del metallo è potente, ma non tutte le vibrazioni sono destinate a diventare musica. Ti auguro buona fortuna nella tua ricerca.",
+      "choices": [
+        {
+          "next": "end",
+          "text": "Grazie. Troverò sicuramente un'armonia. Arrivederci."
+        }
+      ],
+      "type": "default"
+    },
     "end": {
-      "text": "Allora continuiamo a collaborare. Le tue mani forgiano, le mie mani suonano. Insieme, creiamo leggende.",
+      "text": "",
       "type": "end_dialogue"
     }
   },
@@ -19,5 +29,5 @@
     "type": "blabber:rpg"
   },
   "unskippable": false,
-  "start_at": "neutral_conversation"
+  "start_at": "dialogue"
 }

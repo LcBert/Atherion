@@ -4,6 +4,7 @@ execute if predicate atherion:chef/t0 as @s run blabber dialogue start atherion:
 #dialoghi se fai parte di un altra gilda
 execute if predicate atherion:is_a/alchemist as @s run blabber dialogue start atherion:master/wrong_guild/chef/to_alchemist
 execute if predicate atherion:is_a/archer as @s run blabber dialogue start atherion:master/wrong_guild/chef/to_archer
+execute if predicate atherion:is_a/bard as @s run blabber dialogue start atherion:master/wrong_guild/chef/to_bard
 execute if predicate atherion:is_a/blacksmith as @s run blabber dialogue start atherion:master/wrong_guild/chef/to_blacksmith
 execute if predicate atherion:is_a/carpenter as @s run blabber dialogue start atherion:master/wrong_guild/chef/to_carpenter
 execute if predicate atherion:is_a/farmer as @s run blabber dialogue start atherion:master/wrong_guild/chef/to_farmer

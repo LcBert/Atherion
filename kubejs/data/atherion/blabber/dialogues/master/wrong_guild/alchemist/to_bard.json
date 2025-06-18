@@ -1,17 +1,27 @@
 {
   "states": {
-    "neutral_remark": {
-      "text": "La tua melodia risuona tra le ampolle e fa ribollire i miei intrugli alchemici! Ma, in un certo senso, anche la musica è una forma di magia.",
+    "dialogue": {
+      "text": "Bardo, che piacere vederti! Cosa ti porta nel nostro laboratorio oggi?",
       "type": "default",
       "choices": [
         {
-          "next": "end",
-          "text": "È vero, ogni arte ha la sua magia."
+          "next": "response",
+          "text": "Sto cercando nuove melodie, capogilda. Ogni luogo ha i suoi suoni, e credo che questo posto nasconda qualcosa di interessante."
         }
       ]
     },
+    "response": {
+      "text": "Ah, la musica è sempre ispirata dall'ambiente che ci circonda. Le nostre pozioni e ingredienti possono sicuramente offrire qualche nota unica. Buona ricerca, bardo!",
+      "choices": [
+        {
+          "next": "end",
+          "text": "Grazie. Spero di trovare la melodia giusta. Arrivederci!"
+        }
+      ],
+      "type": "default"
+    },
     "end": {
-      "text": "Che le tue note risuonino nell’aria, come le mie pozzioni nelle bottiglie. Ogni scienza ha il suo incanto.",
+      "text": "",
       "type": "end_dialogue"
     }
   },
@@ -19,5 +29,5 @@
     "type": "blabber:rpg"
   },
   "unskippable": false,
-  "start_at": "neutral_remark"
+  "start_at": "dialogue"
 }

@@ -1,17 +1,27 @@
 {
   "states": {
-    "wrong_guild_warning": {
-      "text": "Sho sho… questa non è la tua gilda, guerriero. Le tue mani impugnano la spada, non un arco, né frecce…",
+    "dialogue": {
+      "text": "Ah, un arciere tra le Ombre... cosa ti spinge fin qui, dalle nostre parti?",
       "type": "default",
       "choices": [
         {
-          "next": "end",
-          "text": "Capito, me ne vado."
+          "next": "response",
+          "text": "Solo curiosità. La vostra fama corre veloce, ho pensato valesse la pena dare un’occhiata."
         }
       ]
     },
+    "response": {
+      "text": "Curioso e prudente, buona combinazione. Sei il benvenuto, arciere, finché resti leggero sui passi.",
+      "choices": [
+        {
+          "next": "end",
+          "text": "Terrò gli stivali in silenzio. A rivederci."
+        }
+      ],
+      "type": "default"
+    },
     "end": {
-      "text": "Torna al tuo cammino, dove battaglie e gloria ti attendono.",
+      "text": "",
       "type": "end_dialogue"
     }
   },
@@ -19,5 +29,5 @@
     "type": "blabber:rpg"
   },
   "unskippable": false,
-  "start_at": "wrong_guild_warning"
+  "start_at": "dialogue"
 }

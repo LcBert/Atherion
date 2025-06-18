@@ -1,17 +1,27 @@
 {
   "states": {
-    "neutral_conversation": {
-      "text": "Alchimista, ho notato che le tue pozioni hanno migliorato la resistenza delle nostre colture. Potremmo collaborare per sviluppare un fertilizzante più efficace?",
+    "dialogue": {
+      "text": "Alchimista, che sorpresa vederti qui tra le balle di fieno. Cercavi qualcuno o ti sei perso nel profumo del raccolto?",
       "type": "default",
       "choices": [
         {
-          "text": "Certamente, Capo Contadino. Ho alcune idee che potrebbero aumentare la resa dei raccolti. Discutiamone insieme.",
-          "next": "end"
+          "next": "response",
+          "text": "Solo di passaggio. Il tuo campo è sempre un bel posto in cui fermarsi un attimo."
         }
       ]
     },
+    "response": {
+      "text": "Eh, anche un alchimista sa riconoscere la bellezza della terra. Buona fortuna con i tuoi miscugli.",
+      "choices": [
+        {
+          "next": "end",
+          "text": "Grazie, buona giornata."
+        }
+      ],
+      "type": "default"
+    },
     "end": {
-      "text": "Perfetto! La tua conoscenza dell'alchimia combinata con la nostra esperienza nei campi porterà grandi benefici al villaggio.",
+      "text": "",
       "type": "end_dialogue"
     }
   },
@@ -19,5 +29,5 @@
     "type": "blabber:rpg"
   },
   "unskippable": false,
-  "start_at": "neutral_conversation"
+  "start_at": "dialogue"
 }

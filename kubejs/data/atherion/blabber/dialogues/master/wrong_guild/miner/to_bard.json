@@ -1,17 +1,27 @@
 {
   "states": {
-    "wrong_guild_warning": {
-      "text": "Sho sho… questa non è la tua gilda, guerriero. Le tue mani impugnano la spada, non un arco, né frecce…",
+    "dialogue": {
+      "text": "Bardo, che sorpresa vederti nella nostra gilda! Cosa ti porta qui oggi?",
       "type": "default",
       "choices": [
         {
-          "next": "end",
-          "text": "Capito, me ne vado."
+          "next": "response",
+          "text": "Sto cercando nuove melodie, capogilda. Il suono dei picconi che battono sulla roccia ha un ritmo affascinante, credo che ci sia una melodia nascosta tra le pietre."
         }
       ]
     },
+    "response": {
+      "text": "Ah, il ritmo del lavoro non è mai banale. La musica può davvero nascere da ogni angolo, persino dal suono di un piccone. Buona ricerca bardo.",
+      "choices": [
+        {
+          "next": "end",
+          "text": "Grazie. Troverò sicuramente una melodia che scaturisce da questo ritmo. Arrivederci!"
+        }
+      ],
+      "type": "default"
+    },
     "end": {
-      "text": "Torna al tuo cammino, dove battaglie e gloria ti attendono.",
+      "text": "",
       "type": "end_dialogue"
     }
   },
@@ -19,5 +29,5 @@
     "type": "blabber:rpg"
   },
   "unskippable": false,
-  "start_at": "wrong_guild_warning"
+  "start_at": "dialogue"
 }

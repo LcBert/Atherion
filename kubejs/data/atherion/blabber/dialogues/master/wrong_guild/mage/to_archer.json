@@ -1,17 +1,27 @@
 {
   "states": {
-    "wrong_guild_warning": {
-      "text": "Sho sho… questa non è la tua gilda, guerriero. Le tue mani impugnano la spada, non un arco, né frecce…",
+    "dialogue": {
+      "text": "Arciere, non pensavo di vederti qui tra i maghi. Cosa cerchi?",
       "type": "default",
       "choices": [
         {
-          "next": "end",
-          "text": "Capito, me ne vado."
+          "next": "response",
+          "text": "Rispetto la tua autorità, ma volevo vedere se la vostra magia è all’altezza delle nostre frecce."
         }
       ]
     },
+    "response": {
+      "text": "Bene. Sarà interessante vedere chi avrà la meglio, ma ricordati: qui comando io.",
+      "choices": [
+        {
+          "next": "end",
+          "text": "Lo so bene. Arrivederci."
+        }
+      ],
+      "type": "default"
+    },
     "end": {
-      "text": "Torna al tuo cammino, dove battaglie e gloria ti attendono.",
+      "text": "",
       "type": "end_dialogue"
     }
   },
@@ -19,5 +29,5 @@
     "type": "blabber:rpg"
   },
   "unskippable": false,
-  "start_at": "wrong_guild_warning"
+  "start_at": "dialogue"
 }

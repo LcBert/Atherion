@@ -1,17 +1,27 @@
 {
   "states": {
-    "neutral_conversation": {
-      "text": "Alchimista, i tuoi trattamenti hanno reso il legno più resistente alle intemperie. Le mie costruzioni dureranno per generazioni.",
+    "dialogue": {
+      "text": "Alchimista! Che piacere vederti nei nostri laboratori di falegnameria. A cosa devo la visita?",
       "type": "default",
       "choices": [
         {
-          "text": "Carpentiere, la tua abilità nel modellare il legno è senza pari. È un onore vedere le mie formule prendere forma nelle tue mani.",
-          "next": "end"
+          "next": "response",
+          "text": "Solo un saluto, maestro carpentiere. L’odore del legno lavorato mi tira sempre su di morale."
         }
       ]
     },
+    "response": {
+      "text": "Ah! Se solo le tue pozioni avessero lo stesso profumo! Passa pure quando vuoi.",
+      "choices": [
+        {
+          "next": "end",
+          "text": "A presto!"
+        }
+      ],
+      "type": "default"
+    },
     "end": {
-      "text": "Continuiamo a collaborare, allora. Insieme, possiamo creare strutture che sfidano il tempo e la natura.",
+      "text": "",
       "type": "end_dialogue"
     }
   },
@@ -19,5 +29,5 @@
     "type": "blabber:rpg"
   },
   "unskippable": false,
-  "start_at": "neutral_conversation"
+  "start_at": "dialogue"
 }

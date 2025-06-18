@@ -1,17 +1,27 @@
 {
   "states": {
-    "neutral_conversation": {
-      "text": "Arciere, ho notato che le tue frecce spesso finiscono nei nostri campi. Potremmo trovare un modo per evitare danni ai raccolti?",
+    "dialogue": {
+      "text": "Arciere, non ti aspettavo tra i fattori. Cosa ti porta da noi oggi?",
       "type": "default",
       "choices": [
         {
-          "text": "Capo Contadino, mi scuso per i disagi. Posso addestrarmi in un'area più lontana dai campi.",
-          "next": "end"
+          "next": "response",
+          "text": "Vengo solo a fare una visita, capogilda. Non c'è nulla di urgente."
         }
       ]
     },
+    "response": {
+      "text": "Capisco. È raro vederti in questi luoghi, ma ogni visita è benvenuta, finché non disturba il nostro lavoro.",
+      "choices": [
+        {
+          "next": "end",
+          "text": "Non disturberò. Arrivederci."
+        }
+      ],
+      "type": "default"
+    },
     "end": {
-      "text": "Apprezzo la tua comprensione. Collaborando, possiamo mantenere sia i raccolti che le tue abilità in ottima forma.",
+      "text": "",
       "type": "end_dialogue"
     }
   },
@@ -19,5 +29,5 @@
     "type": "blabber:rpg"
   },
   "unskippable": false,
-  "start_at": "neutral_conversation"
+  "start_at": "dialogue"
 }

@@ -1,17 +1,27 @@
 {
   "states": {
-    "neutral_conversation": {
-      "text": "Fabbro, le tue punte di freccia sono impeccabili. Hanno attraversato l'armatura del bersaglio come burro.",
+    "dialogue": {
+      "text": "Arciere, sempre un piacere vederti da queste parti. Cosa ti porta alla forgia oggi?",
       "type": "default",
       "choices": [
         {
-          "text": "Arcere, la tua mira dà vita alle mie creazioni. Senza la tua precisione, le mie punte sarebbero solo pezzi di metallo.",
-          "next": "end"
+          "next": "response",
+          "text": "Passavo di qui e volevo salutarti."
         }
       ]
     },
+    "response": {
+      "text": "Bene. Ricorda che una buona freccia nasce da un buon martello. Torna presto!",
+      "choices": [
+        {
+          "next": "end",
+          "text": "Lo farò sicuramente, grazie. A presto!"
+        }
+      ],
+      "type": "default"
+    },
     "end": {
-      "text": "Allora continuiamo a collaborare. Le tue mani forgiano, le mie mani colpiscono. Insieme, siamo una forza inarrestabile.",
+      "text": "",
       "type": "end_dialogue"
     }
   },
@@ -19,5 +29,5 @@
     "type": "blabber:rpg"
   },
   "unskippable": false,
-  "start_at": "neutral_conversation"
+  "start_at": "dialogue"
 }

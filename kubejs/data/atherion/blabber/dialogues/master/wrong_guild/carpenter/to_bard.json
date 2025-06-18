@@ -1,17 +1,27 @@
 {
   "states": {
-    "neutral_conversation": {
-      "text": "Bardo, ho sentito che hai trasformato la mia officina in un palcoscenico per le tue esibizioni. Non ti sembra di aver oltrepassato il limite?",
+    "dialogue": {
+      "text": "Bardo, che ti porta nella nostra bottega oggi? Cosa stai cercando?",
       "type": "default",
       "choices": [
         {
-          "text": "Carpentiere, la tua officina era il luogo perfetto per ispirare le mie ballate. Non capisco perché tu sia così contrariato.",
-          "next": "end"
+          "next": "response",
+          "text": "Sto cercando nuove melodie, capogilda. Ogni colpo di sega e martello ha un ritmo che potrebbe ispirare una composizione."
         }
       ]
     },
+    "response": {
+      "text": "Il legno ha il suo suono, ma è la mano dell'artigiano a dargli forma. Se riesci a trovare una melodia in questo, sarò curioso di ascoltarla.",
+      "choices": [
+        {
+          "next": "end",
+          "text": "Grazie. Troverò sicuramente la melodia giusta. Arrivederci."
+        }
+      ],
+      "type": "default"
+    },
     "end": {
-      "text": "La mia officina è un luogo di lavoro, non un teatro. La prossima volta, chiedi il permesso prima di invadere il mio spazio.",
+      "text": "",
       "type": "end_dialogue"
     }
   },
@@ -19,5 +29,5 @@
     "type": "blabber:rpg"
   },
   "unskippable": false,
-  "start_at": "neutral_conversation"
+  "start_at": "dialogue"
 }

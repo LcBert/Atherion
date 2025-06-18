@@ -1,17 +1,27 @@
 {
   "states": {
-    "wrong_guild_warning": {
-        "text": "Un bardo... Pensavo che i tuoi canti fossero riservati a chi ha bisogno di consolazione. Ma qui, nella nostra gilda, abbiamo solo bisogno di precisione e silenzio, non di melodie inutili.",
+    "dialogue": {
+      "text": "Bardo, che ci fai tra gli arcieri? Non penso che la tua musica abbia posto tra i nostri archi e frecce.",
       "type": "default",
       "choices": [
         {
-          "next": "end",
-           "text": "Ah, capo cacciatore, nessuna melodia può rivelare la bellezza di questo mondo come le mie canzoni. Ma capisco che per te solo l'ombra della foresta ha valore. Che peccato, vivere nella tua monotona solitudine."
+          "next": "response",
+          "text": "Sto cercando nuovi testi da comporre, capogilda. Il suono delle frecce che fischiano potrebbe ispirarmi."
         }
       ]
     },
+    "response": {
+      "text": "Nuovi testi? Non abbiamo tempo per le tue sciocchezze, bardo. Qui si tira la corda e si scocca la freccia, non si scrivono canzoni.",
+      "choices": [
+        {
+          "next": "end",
+          "text": "Non intendo capogilda. Troverò la mia ispirazione altrove. Arrivederci."
+        }
+      ],
+      "type": "default"
+    },
     "end": {
-      "text": "Continua pure a suonare, Bardo. Ma ricordati, la prossima volta che ci incontriamo, non avrai una melodia a proteggerti. Solo l'eco delle tue stesse parole.",
+      "text": "",
       "type": "end_dialogue"
     }
   },
@@ -19,5 +29,5 @@
     "type": "blabber:rpg"
   },
   "unskippable": false,
-  "start_at": "wrong_guild_warning"
+  "start_at": "dialogue"
 }

@@ -1,17 +1,27 @@
 {
   "states": {
-    "wrong_guild_warning": {
-      "text": "Sho sho… questa non è la tua gilda, guerriero. Le tue mani impugnano la spada, non un arco, né frecce…",
+    "dialogue": {
+      "text": "Arciere, che sorpresa vederti dalle nostre parti! Cosa ti porta qui tra i minatori?",
       "type": "default",
       "choices": [
         {
-          "next": "end",
-          "text": "Capito, me ne vado."
+          "next": "response",
+          "text": "Passavo di qui e ho pensato di salutarti, capogilda."
         }
       ]
     },
+    "response": {
+      "text": "È sempre un piacere. Passa a trovarci più spesso, la compagnia è buona qui sotto terra.",
+      "choices": [
+        {
+          "next": "end",
+          "text": "Farò così, grazie. A presto!"
+        }
+      ],
+      "type": "default"
+    },
     "end": {
-      "text": "Torna al tuo cammino, dove battaglie e gloria ti attendono.",
+      "text": "",
       "type": "end_dialogue"
     }
   },
@@ -19,5 +29,5 @@
     "type": "blabber:rpg"
   },
   "unskippable": false,
-  "start_at": "wrong_guild_warning"
+  "start_at": "dialogue"
 }

@@ -1,17 +1,27 @@
 {
   "states": {
-    "wrong_guild_warning": {
-      "text": "Sho sho… questa non è la tua gilda, guerriero. Le tue mani impugnano la spada, non un arco, né frecce…",
+    "dialogue": {
+      "text": "Fabbro, che ti porta nelle oscure sale delle Ombre oggi? Non sembra proprio il tuo posto.",
       "type": "default",
       "choices": [
         {
-          "next": "end",
-          "text": "Capito, me ne vado."
+          "next": "response",
+          "text": "Cerco nuovi modi di forgiare il metallo, capogilda. Le ombre offrono sempre nuovi spunti, anche per il nostro lavoro."
         }
       ]
     },
+    "response": {
+      "text": "Le ombre nascondono più di quanto si pensi, fabbro... Se trovi ispirazione qui, sono curioso di vedere cosa ne uscirà.",
+      "choices": [
+        {
+          "next": "end",
+          "text": "Grazie, vedrai che capolavoro ne uscirà. A presto!"
+        }
+      ],
+      "type": "default"
+    },
     "end": {
-      "text": "Torna al tuo cammino, dove battaglie e gloria ti attendono.",
+      "text": "",
       "type": "end_dialogue"
     }
   },
@@ -19,5 +29,5 @@
     "type": "blabber:rpg"
   },
   "unskippable": false,
-  "start_at": "wrong_guild_warning"
+  "start_at": "dialogue"
 }

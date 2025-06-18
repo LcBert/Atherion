@@ -1,17 +1,27 @@
 {
   "states": {
-    "wrong_guild_warning": {
-      "text": "Sho sho… questa non è la tua gilda, guerriero. Le tue mani impugnano la spada, non un arco, né frecce…",
+    "dialogue": {
+      "text": "Bardo, che ci fai nella nostra guarnigione? Non credo che la tua musica abbia posto tra i guerrieri.",
       "type": "default",
       "choices": [
         {
-          "next": "end",
-          "text": "Capito, me ne vado."
+          "next": "response",
+          "text": "Sto cercando nuovi testi da comporre, capogilda. Anche il clangore delle spade può ispirarmi."
         }
       ]
     },
+    "response": {
+      "text": "Nuovi testi? Qui non c'è posto per le tue sciocchezze. Concentrati su qualcosa di utile, bardo, prima che mi faccia venire il mal di testa.",
+      "choices": [
+        {
+          "next": "end",
+          "text": "Non intendo disturbarvi. Troverò ispirazione altrove. Arrivederci."
+        }
+      ],
+      "type": "default"
+    },
     "end": {
-      "text": "Torna al tuo cammino, dove battaglie e gloria ti attendono.",
+      "text": "",
       "type": "end_dialogue"
     }
   },
@@ -19,5 +29,5 @@
     "type": "blabber:rpg"
   },
   "unskippable": false,
-  "start_at": "wrong_guild_warning"
+  "start_at": "dialogue"
 }
